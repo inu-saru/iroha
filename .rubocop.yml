@@ -1,0 +1,203 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  SuggestExtensions: false
+  # 最新のルールを適用する
+  NewCops: enable
+  # 何のルールに引っかかったか表示する
+  DisplayCopNames: true
+  # rubocop対象外(リポジトリ毎で調節)
+  Exclude:
+    - "Gemfile"
+    - "bin/**/*"
+    - "db/**/*"
+    - "log/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "lib/tasks/auto_annotate_models.rake"
+    - "config/environments/*"
+    - "config/puma.rb"
+
+# ============================================================
+# Style
+# ============================================================
+# 日本語コメントを許可
+Style/AsciiComments:
+  Enabled: false
+
+# do .. end から更にメソッドチェーンすると見づらいので
+# auto-correct せず、自分で修正する
+# spec 内は見た目が綺麗になるので許可
+Style/BlockDelimiters:
+  AutoCorrect: false
+
+# namespace 付きのクラスはかなり頻繁に作るので簡単に書きたい。
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+#Style/CollectionMethods 自体は無効になっているのだが、
+# デフォルト値から変えたのは
+#   find -> detect
+#     ActiveRecord の find と間違えやすいため
+Style/CollectionMethods:
+  PreferredMethods:
+    detect: "detect"
+    find: "detect"
+
+# ドキュメントの無い public class を許可する
+Style/Documentation:
+  Enabled: false
+
+# !! のイディオムは使ってもよいと思うので
+Style/DoubleNegation:
+  Enabled: false
+
+# これがあると
+# undefined method `begin_pos' for #<Parser::Source::Map::Condition:0x007f4ebf1974a8>
+# で落ちることがあるのでコメントアウト
+## elseの中に明示的にnilを書くのを許可する
+#Style/EmptyElse:
+#  EnforcedStyle: nil
+
+# 別にsprintfでもformatでもString#%でもよいと思うので
+Style/FormatString:
+  Enabled: false
+
+# if 文の中に 5 行程度のブロックを書くぐらいは許容した方が現実的かなぁと
+Style/GuardClause:
+  MinBodyLength: 5
+
+# 条件式の方を意識させたい場合には後置の if/unless を使わない方が分かりやすい
+Style/IfUnlessModifier:
+  Enabled: false
+
+# scope 等は複数行でも lambda ではなく ->{} を使いたい
+Style/Lambda:
+  EnforcedStyle: literal
+
+# 1_000_000 と区切り文字が 2 個以上必要になる場合のみ _ 区切りを必須にする
+Style/NumericLiterals:
+  MinDigits: 7
+
+# 正規表現にマッチさせた時の特殊変数の置き換えは Regex.last_match ではなく
+# 名前付きキャプチャを使って参照したいので auto-correct しない
+Style/PerlBackrefs:
+  AutoCorrect: false
+
+# ローカル変数とメソッド呼び出しの区別をつけた方が分かりやすい場合が多い
+Style/RedundantSelf:
+  Enabled: false
+
+# いくらなんでも inject { |a, e| } は短すぎるので分かりやすい名前をつけたい
+Style/SingleLineBlockParams:
+  Enabled: false
+
+# %w[..] は許容して欲しいところ
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+# 文字列のfreeze（Ruby3からは自動でfreezeされるので要らない）
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# before_actionの際の未定義メソッドのチェック（deviseとの兼ね合いで一旦false）
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+
+# メールの{|format| format.text}みたいなのはひっかけたくない
+Style/SymbolProc:
+  Exclude:
+    - 'app/mailers/**/*'
+
+# def show;endって書き方読みやすいとは思わない
+Style/EmptyMethod:
+  Enabled: false
+
+# ============================================================
+# Metrics
+# ============================================================
+
+# 30 ぐらいまでは許容してもいいのでは
+Metrics/AbcSize:
+  Max: 30
+
+# 80では短すぎる。かといって長すぎてもgithub上のコードレビューがやり辛いという問題があるので制限は必要
+Metrics/LineLength:
+  Max: 160
+
+# 20くらいは別によいと思う
+Metrics/MethodLength:
+  Max: 20
+
+# routes, rake, rspecにおけるブロックの長さについては致し方ない
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+    - 'lib/tasks/**/*.rake'
+    - 'spec/**/*'
+
+# ============================================================
+# Layout
+# ============================================================
+
+# special_inside_parentheses (default) と比べて
+# * 横に長くなりづらい
+# * メソッド名の長さが変わったときに diff が少ない
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+  
+# ============================================================
+# RSpec
+# ============================================================
+# backgroundとかであるクラスの全インスタンスをstubしてるなど意図してやると思うので
+RSpec/AnyInstance:
+  Enabled: false
+
+# Contextの条件の説明を日本語でも書きたいので
+RSpec/ContextWording:
+ Enabled: false
+
+# 以下のようなもので引っかかってしまって困るので
+# describe GuestTicket do
+#   describe '#save' do
+#     let!(:guest_ticket) {
+#       GuestTicket.new schedule, guest_ticket_params
+#     }
+RSpec/DescribedClass:
+  Enabled: false
+
+# 厳密にテストしたい場合に複数条件を入れるのはよいかと
+RSpec/MultipleExpectations:
+  Enabled: false
+
+# feature specで長くなるので
+RSpec/ExampleLength:
+  Enabled: false
+
+# 自動生成されて中身が空のままコミットすることはある
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+# ============================================================
+# Lint
+# ============================================================
+
+# RuntimeError は「特定の Error を定義できない場合」なので、
+# 定義できるエラーは RuntimeError ではなく StandardError を継承する。
+Lint/InheritException:
+  EnforcedStyle: standard_error
+
+# * 同名のメソッドがある場合にローカル変数に `_` を付ける
+# * 一時変数として `_` を付ける
+# というテクニックは頻出する
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
+
+# 子クラスで実装させるつもりのメソッドで引っかかるので
+Lint/UnusedMethodArgument:
+  Enabled: false
