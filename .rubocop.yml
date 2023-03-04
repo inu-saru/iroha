@@ -126,10 +126,6 @@ Style/EmptyMethod:
 Metrics/AbcSize:
   Max: 30
 
-# 80では短すぎる。かといって長すぎてもgithub上のコードレビューがやり辛いという問題があるので制限は必要
-Metrics/LineLength:
-  Max: 160
-
 # 20くらいは別によいと思う
 Metrics/MethodLength:
   Max: 20
@@ -157,6 +153,10 @@ Layout/FirstArrayElementIndentation:
 # backgroundとかであるクラスの全インスタンスをstubしてるなど意図してやると思うので
 RSpec/AnyInstance:
   Enabled: false
+
+# 80では短すぎる。かといって長すぎてもgithub上のコードレビューがやり辛いという問題があるので制限は必要
+Layout/LineLength:
+  Max: 160
 
 # Contextの条件の説明を日本語でも書きたいので
 RSpec/ContextWording:
