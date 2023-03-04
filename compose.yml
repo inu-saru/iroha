@@ -1,8 +1,8 @@
-version: "3"
+version: "3.9"
 services:
   db:
     image: postgres
-    container_name: db-container
+    container_name: iroha_db
     volumes:
       - postgresql-data:/var/lib/postgresql/data
     environment:
@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
   web:
-    container_name: web-container
+    container_name: iroha_web
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     volumes:

@@ -2,5 +2,5 @@
 
 if git diff --cached --name-only --diff-filter=AM | grep '\.rb$'; then
   echo '---Rubocop---'
-  git diff --cached --name-only --diff-filter=AM | grep '\.rb$' | xargs docker-compose exec -T web-container bundle exec rubocop --fail-level R --display-only-fail-level-offenses
+  git diff --cached --name-only --diff-filter=AM | grep '\.rb$' | xargs docker compose exec -T iroha_web bundle exec rubocop --fail-level R --display-only-fail-level-offenses
 fi
