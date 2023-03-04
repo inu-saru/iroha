@@ -15,6 +15,7 @@ group :development, :test do
   gem 'gimei'
   gem 'ffaker'
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'rspec-request_describer'
   gem 'pry-byebug'
   gem 'pry-rails'
 end

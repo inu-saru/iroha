@@ -183,6 +183,10 @@ RSpec/ExampleLength:
 RSpec/EmptyExampleGroup:
   Enabled: false
 
+# rspec-request_describer を利用したいのでfalse
+RSpec/NamedSubject:
+  Enabled: false
+
 # ============================================================
 # Lint
 # ============================================================
