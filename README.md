@@ -13,3 +13,10 @@ $ docker-compose run web rails db:migrate
 $ docker-compose up
 ```
 http://0.0.0.0:3000
+
+## pre-commit
+commit 時にrubocop を起動させる設定
+```
+cp pre-commit.sample .git/hooks/pre-commit
+chmod a+x .git/hooks/pre-commit
+```
