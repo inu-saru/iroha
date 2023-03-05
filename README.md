@@ -4,8 +4,8 @@
 ```
 // $ docker-compose run web rails new . --api --force --no-deps --database=postgresql
 $ docker compose build
-$ docker compose run web rails db:create
-$ docker compose run web rails db:migrate
+$ docker compose run api rails db:create
+$ docker compose run api rails db:migrate
 ```
 
 ## 起動
