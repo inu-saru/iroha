@@ -7,7 +7,7 @@ RSpec.describe User do
   end
 
   describe 'validation' do
-    context 'email' do
+    describe 'email' do
       it '不正なemailは無効であること' do
         user = build(:user, email: 'aaabbb')
         expect(user).not_to be_valid
@@ -34,7 +34,7 @@ RSpec.describe User do
       end
     end
 
-    context 'name' do
+    describe 'name' do
       it '指定がない場合も登録できること' do
         name_empty_user = User.create(attributes_for(:user).tap { |hash| hash.delete(:name) })
         expect(name_empty_user).to be_valid
@@ -42,7 +42,7 @@ RSpec.describe User do
       end
     end
 
-    context 'password' do
+    describe 'password' do
       it 'nilの場合エラーになること' do
         user = build(:user, password: nil)
         expect(user).not_to be_valid
