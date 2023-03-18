@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'POST /api/v1/signup' do
   let(:user1) { create(:user) }
-  let(:json) { JSON.parse(response.body, symbolize_names: true) }
   let(:user_response) do
     {
       id: a_kind_of(Integer),
@@ -23,8 +22,8 @@ RSpec.describe 'POST /api/v1/signup' do
       end.to change(User, :count).by(1)
       expect(response).to have_http_status(:ok)
       user_response.store(:email, params[:user][:email])
-      expect(json).to include(user_response)
-      expect(json.size).to eq 6
+      expect(json_response).to include(user_response)
+      expect(json_response.size).to eq 6
     end
   end
 
@@ -37,7 +36,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Email is invalid"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Email is invalid"
     end
   end
 
@@ -51,7 +50,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Email has already been taken"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Email has already been taken"
     end
   end
 
@@ -64,7 +63,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Email can't be blank"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Email can't be blank"
     end
   end
 
@@ -77,7 +76,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Email can't be blank"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Email can't be blank"
     end
   end
 
@@ -90,7 +89,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Email can't be blank"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Email can't be blank"
     end
   end
 
@@ -103,7 +102,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Password is too short (minimum is 6 characters)"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Password is too short (minimum is 6 characters)"
     end
   end
 
@@ -116,7 +115,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Password is too long (maximum is 128 characters)"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Password is too long (maximum is 128 characters)"
     end
   end
 
@@ -129,7 +128,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Password can't be blank"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Password can't be blank"
     end
   end
 
@@ -142,7 +141,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Password can't be blank"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Password can't be blank"
     end
   end
 
@@ -155,7 +154,7 @@ RSpec.describe 'POST /api/v1/signup' do
         subject
       end.not_to change(User, :count)
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(json[:message]).to eq "User couldn't be created successfully. Password can't be blank"
+      expect(json_response[:message]).to eq "User couldn't be created successfully. Password can't be blank"
     end
   end
 end
