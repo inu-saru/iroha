@@ -13,6 +13,10 @@ class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
     params.require(:user).permit(:email, :password, :password_confirmation)
   end
 
+  def account_update_params
+    params.require(:user).permit(:name)
+  end
+
   def respond_with(resource, _opts = {})
     if resource.persisted?
       render json: resource
