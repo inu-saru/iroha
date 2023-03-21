@@ -8,6 +8,16 @@ class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
     super
   end
 
+  def destroy
+    resource.destroy
+    Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
+    set_flash_message! :notice, :destroyed
+    yield resource if block_given?
+    render json: {
+      message: "User was deleted successfully."
+    }
+  end
+
   private
 
   def sign_up_params
