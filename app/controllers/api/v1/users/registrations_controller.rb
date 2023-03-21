@@ -1,6 +1,7 @@
 class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
   include RackSessionFix
   respond_to :json
+  wrap_parameters :user
 
   def create
     build_resource(sign_up_params)
