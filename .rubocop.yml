@@ -81,8 +81,11 @@ Style/Lambda:
   EnforcedStyle: literal
 
 # 1_000_000 と区切り文字が 2 個以上必要になる場合のみ _ 区切りを必須にする
+# schema ファイルのmigrate_at のdatetime の記法は維持したい
 Style/NumericLiterals:
   MinDigits: 7
+  Exclude:
+    - 'db/schema.rb'
 
 # 正規表現にマッチさせた時の特殊変数の置き換えは Regex.last_match ではなく
 # 名前付きキャプチャを使って参照したいので auto-correct しない
