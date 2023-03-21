@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'DELETE /api/v1/signup' do
+RSpec.describe 'DELETE /api/v1/registration' do
   let!(:user1) { create(:user) }
 
   context 'with Authorization header' do

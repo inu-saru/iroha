@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'POST /api/v1/signup' do
+RSpec.describe 'POST /api/v1/registration' do
   let(:user1) { create(:user) }
   let(:user_response) do
     {
