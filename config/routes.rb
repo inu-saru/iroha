@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :ping, only: :index
+      namespace :users do
+        get 'me', to: 'me#show'
+      end
     end
   end
 end
