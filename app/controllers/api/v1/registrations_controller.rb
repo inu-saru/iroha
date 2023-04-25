@@ -1,4 +1,4 @@
-class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
+class Api::V1::RegistrationsController < Devise::RegistrationsController
   include RackSessionFix
   respond_to :json
   wrap_parameters :user
