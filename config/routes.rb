@@ -6,8 +6,8 @@ Rails.application.routes.draw do
                        registration: 'registration'
                      },
                      controllers: {
-                       sessions: 'api/v1/sessions',
-                       registrations: 'api/v1/registrations'
+                       sessions: 'api/v1/users/sessions',
+                       registrations: 'api/v1/users/registrations'
                      }
   namespace :api do
     namespace :v1 do
