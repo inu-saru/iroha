@@ -30,7 +30,7 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
 
   def respond_with(resource, _opts = {})
     if resource.persisted?
-      render json: resource
+      render json: UserResource.new(resource).serialize
     else
       render json: {
         message: "User couldn't be created successfully. #{resource.errors.full_messages.to_sentence}"
