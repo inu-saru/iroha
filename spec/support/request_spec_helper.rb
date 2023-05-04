@@ -3,6 +3,10 @@ module RequestSpecHelper
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def json_attributes(json)
+    JSON.parse(json, symbolize_names: true)
+  end
+
   def login_token(user)
     login_params = { user: { email: user.email, password: user.password } }
     post user_session_path, params: login_params
