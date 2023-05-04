@@ -1,8 +1,10 @@
 class Api::V1::Spaces::IndexController < ApplicationController
   before_action :authenticate_user!
+  after_action { pagy_headers_merge(@pagy) if @pagy }
 
   def index
-    render json: SpaceResource.new(spaces).serialize
+    @pagy, @spaces = pagy(spaces)
+    render json: SpaceResource.new(@spaces).serialize
   end
 
   def show

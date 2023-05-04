@@ -39,5 +39,17 @@ RSpec.describe 'GET /api/v1/spaces' do
       expect(response).to have_http_status(:ok)
       expect(json_response).not_to include json_attributes(SpaceResource.new(other_space1).serialize)
     end
+
+    it 'spaceが20件以上ある場合、正しくspace情報が返されること' do
+      19.times { create(:a_space_the_user, { user: user1 }) }
+
+      subject
+      expect(response).to have_http_status(:ok)
+      expect(json_response.size).to eq 20
+
+      get(api_v1_spaces_path, headers:, params: { page: 2 })
+      expect(response).to have_http_status(:ok)
+      expect(json_response.size).to eq 1
+    end
   end
 end
