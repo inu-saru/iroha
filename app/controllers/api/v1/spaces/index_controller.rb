@@ -1,6 +1,7 @@
 class Api::V1::Spaces::IndexController < ApplicationController
   before_action :authenticate_user!
   after_action { pagy_headers_merge(@pagy) if @pagy }
+  wrap_parameters :space
 
   def index
     @pagy, @spaces = pagy(spaces)
