@@ -36,6 +36,6 @@ class Api::V1::Spaces::IndexController < ApplicationController
   end
 
   def spaces
-    current_user.spaces
+    current_user.spaces.order(created_at: :desc)
   end
 end

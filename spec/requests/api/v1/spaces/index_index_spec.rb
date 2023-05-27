@@ -27,11 +27,11 @@ RSpec.describe 'GET /api/v1/spaces' do
       headers['Authorization'] = token1
     end
 
-    it 'ownerであるspaceのみ返されること' do
+    it 'ownerであるspaceのみ返され、orderが作成日のdescであること' do
       subject
       expect(response).to have_http_status(:ok)
-      expect(json_response.first).to eq json_attributes(SpaceResource.new(space1).serialize)
-      expect(json_response.second).to eq json_attributes(SpaceResource.new(space2).serialize)
+      expect(json_response.first).to eq json_attributes(SpaceResource.new(space2).serialize)
+      expect(json_response.second).to eq json_attributes(SpaceResource.new(space1).serialize)
     end
 
     it 'ownerでないspaceが返されないこと' do
