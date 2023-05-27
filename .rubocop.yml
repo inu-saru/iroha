@@ -139,6 +139,7 @@ Metrics/BlockLength:
     - 'config/routes.rb'
     - 'lib/tasks/**/*.rake'
     - 'spec/**/*'
+    - 'db/schema.rb'
 
 # ============================================================
 # Layout
@@ -177,6 +178,10 @@ RSpec/DescribedClass:
 # 厳密にテストしたい場合に複数条件を入れるのはよいかと
 RSpec/MultipleExpectations:
   Enabled: false
+
+# letの数がdefaultの5だと厳しいので
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
 
 # feature specで長くなるので
 RSpec/ExampleLength:

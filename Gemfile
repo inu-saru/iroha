@@ -12,6 +12,7 @@ gem 'rack-cors'
 gem 'devise'
 gem 'devise-jwt'
 gem 'alba'
+gem 'pagy', '~> 6.0'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
