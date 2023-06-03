@@ -15,7 +15,9 @@ Rails.application.routes.draw do
       namespace :users do
         get 'me', to: 'me#show'
       end
-      resources :spaces, controller: 'spaces/index'
+      resources :spaces, controller: 'spaces/index' do
+        resources :sections, controller: 'sections/index'
+      end
     end
   end
 end

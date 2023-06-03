@@ -10,16 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_03_075552) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_31_151945) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "sections", force: :cascade do |t|
+    t.bigint "space_id", null: false
+    t.string "name", limit: 255, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["space_id"], name: "index_sections_on_space_id"
+  end
 
   create_table "space_users", force: :cascade do |t|
     t.bigint "space_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index %w[space_id user_id], name: "index_space_users_on_space_id_and_user_id", unique: true
+    t.index ["space_id", "user_id"], name: "index_space_users_on_space_id_and_user_id", unique: true
     t.index ["space_id"], name: "index_space_users_on_space_id"
     t.index ["user_id"], name: "index_space_users_on_user_id"
   end
@@ -45,6 +53,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_03_075552) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "sections", "spaces"
   add_foreign_key "space_users", "spaces"
   add_foreign_key "space_users", "users"
 end
