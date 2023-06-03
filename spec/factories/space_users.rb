@@ -8,4 +8,9 @@ FactoryBot.define do
     space { create(:space) }
     user { nil }
   end
+
+  factory :space_user_with, class: 'SpaceUser' do
+    space { create(:space) }
+    user { create(:user) }
+  end
 end
