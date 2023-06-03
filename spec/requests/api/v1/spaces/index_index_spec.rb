@@ -40,7 +40,7 @@ RSpec.describe 'GET /api/v1/spaces' do
       expect(json_response).not_to include json_attributes(SpaceResource.new(other_space1).serialize)
     end
 
-    it 'spaceが20件以上ある場合、正しくspace情報が返されること' do
+    it 'spaceが20件以上ある場合、正しく情報が返されること' do
       19.times { create(:a_space_the_user, { user: user1 }) }
 
       subject

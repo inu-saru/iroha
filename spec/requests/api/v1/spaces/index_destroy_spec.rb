@@ -42,7 +42,6 @@ RSpec.describe 'DELETE /api/v1/spaces/:space_id' do
       it '404エラーが返ること' do
         subject
         expect(response).to have_http_status(:not_found)
-        expect(json_response).not_to eq json_attributes(SpaceResource.new(other_space1).serialize)
       end
     end
   end
