@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_31_151945) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_04_152603) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -53,7 +53,21 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_31_151945) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "vocabularies", force: :cascade do |t|
+    t.integer "vocabulary_type", default: 0
+    t.string "en"
+    t.string "ja"
+    t.bigint "space_id", null: false
+    t.bigint "section_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["section_id"], name: "index_vocabularies_on_section_id"
+    t.index ["space_id"], name: "index_vocabularies_on_space_id"
+  end
+
   add_foreign_key "sections", "spaces"
   add_foreign_key "space_users", "spaces"
   add_foreign_key "space_users", "users"
+  add_foreign_key "vocabularies", "sections"
+  add_foreign_key "vocabularies", "spaces"
 end
