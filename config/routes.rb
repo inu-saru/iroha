@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       end
       resources :spaces, controller: 'spaces/index' do
         resources :sections, controller: 'sections/index'
+        resources :vocabularies, controller: 'vocabularies/index'
       end
     end
   end
