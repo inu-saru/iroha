@@ -33,6 +33,18 @@ RSpec.describe 'POST /api/v1/spaces/:space_id/sections' do
       expect(created_section.space).to eq space1
     end
 
+    context 'userがownerでないspaceを指定した場合' do
+      let(:other_space1) { create(:space_user_with).space }
+      let(:space_id) { other_space1.id }
+
+      it '404エラーが返ること' do
+        params[:section] = attributes_for(:section).slice(:en)
+
+        subject
+        expect(response).to have_http_status(:not_found)
+      end
+    end
+
     it '不正なparamsの場合、400エラーが返ること' do
       params[:section] = { name: '' }
 
