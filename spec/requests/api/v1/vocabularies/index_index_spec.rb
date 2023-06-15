@@ -65,5 +65,79 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
         expect(response).to have_http_status(:not_found)
       end
     end
+
+    describe 'filter section_id' do
+      let(:section1) { create(:section, space: space1) }
+      let(:sentence3) { create(:sentence, space: space1) }
+
+      before do
+        sentence1.section = section1
+        sentence1.save
+        params['section_id'] = sentence1.section.id
+      end
+
+      it '指定したsection.idのsentenceのみ返されること' do
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+    end
+
+    describe 'filter vocabulary_type' do
+      let(:word1) { create(:word, space: space1) }
+
+      before do
+        word1
+        params['vocabulary_type'] = 'word'
+      end
+
+      it 'wordのみ返されること' do
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: word1.id)
+          ]
+        )
+      end
+    end
+
+    describe 'filter langage' do
+      before do
+        params['langage'] = 'TEST_KEYWORD'
+      end
+
+      it '指定した文字列がenに存在する場合、該当のsentenceが返されること' do
+        sentence1.en += 'TEST_KEYWORD'
+        sentence1.save
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+
+      it '指定した文字列がjaに存在する場合、該当のsentenceが返されること' do
+        sentence1.ja += 'TEST_KEYWORD'
+        sentence1.save
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+    end
   end
 end

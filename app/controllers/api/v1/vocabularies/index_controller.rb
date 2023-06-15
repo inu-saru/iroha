@@ -5,7 +5,8 @@ class Api::V1::Vocabularies::IndexController < ApplicationController
   wrap_parameters :vocabulary
 
   def index
-    @pagy, @vocabularies = pagy(vocabularies)
+    @vocabularies = Vocabulary.filter(vocabularies, filtering_params)
+    @pagy, @vocabularies = pagy(@vocabularies)
     render json: VocabularyResource.new(@vocabularies).serialize
   end
 
@@ -34,6 +35,10 @@ class Api::V1::Vocabularies::IndexController < ApplicationController
 
   def vocabulary_params
     params.require(:vocabulary).permit(:vocabulary_type, :en, :ja, :section_id)
+  end
+
+  def filtering_params
+    params.slice(:section_id, :vocabulary_type, :langage)
   end
 
   def vocabularies
