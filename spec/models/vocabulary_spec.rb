@@ -38,13 +38,13 @@ RSpec.describe Vocabulary do
     end
 
     describe 'en ja' do
-      it 'すべてのlangageがnilの場合無効であること' do
+      it 'すべてのlanguageがnilの場合無効であること' do
         section = build(:sentence, space: space1, en: nil, ja: nil)
         expect(section).not_to be_valid
-        expect(section.errors[:langage]).to include("is required at (least one langage)")
+        expect(section.errors[:language]).to include("is required at (least one language)")
       end
 
-      it 'いずれかのlangageがnilの場合有効であること' do
+      it 'いずれかのlanguageがnilの場合有効であること' do
         section = build(:sentence, space: space1, ja: nil)
         expect(section).to be_valid
       end

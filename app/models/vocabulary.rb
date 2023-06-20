@@ -3,7 +3,7 @@ class Vocabulary < ApplicationRecord
 
   validates :en, length: { maximum: 1000 }
   validates :ja, length: { maximum: 1000 }
-  validate :required_at_least_one_langage
+  validate :required_at_least_one_language
 
   belongs_to :space
   belongs_to :section, optional: true
@@ -17,9 +17,9 @@ class Vocabulary < ApplicationRecord
       .or(where("ja LIKE ?", "%#{q}%"))
   end
 
-  def required_at_least_one_langage
+  def required_at_least_one_language
     return if en.present? || ja.present?
 
-    errors.add(:langage, 'is required at (least one langage)')
+    errors.add(:language, 'is required at (least one language)')
   end
 end
