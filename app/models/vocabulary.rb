@@ -10,11 +10,11 @@ class Vocabulary < ApplicationRecord
 
   enum :vocabulary_type, { word: 0, idiom: 1, sentence: 2 }
 
-  scope :filter_by_section_id, ->(section_id) { where section_id: }
+  scope :filter_by_sid, ->(sid) { where section_id: sid }
   scope :filter_by_vocabulary_type, ->(vocabulary_type) { where vocabulary_type: }
-  scope :filter_by_langage, ->(langage) do
-    where("en LIKE ?", "%#{langage}%")
-      .or(where("ja LIKE ?", "%#{langage}%"))
+  scope :filter_by_q, ->(q) do
+    where("en LIKE ?", "%#{q}%")
+      .or(where("ja LIKE ?", "%#{q}%"))
   end
 
   def required_at_least_one_langage

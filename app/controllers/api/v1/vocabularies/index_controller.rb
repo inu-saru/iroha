@@ -38,7 +38,7 @@ class Api::V1::Vocabularies::IndexController < ApplicationController
   end
 
   def filtering_params
-    params.slice(:section_id, :vocabulary_type, :langage)
+    params.slice(:sid, :vocabulary_type, :q)
   end
 
   def vocabularies

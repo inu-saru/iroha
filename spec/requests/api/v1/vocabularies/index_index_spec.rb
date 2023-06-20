@@ -66,14 +66,14 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
       end
     end
 
-    describe 'filter section_id' do
+    describe 'filter sid(section_id)' do
       let(:section1) { create(:section, space: space1) }
       let(:sentence3) { create(:sentence, space: space1) }
 
       before do
         sentence1.section = section1
         sentence1.save
-        params['section_id'] = sentence1.section.id
+        params['sid'] = sentence1.section.id
       end
 
       it '指定したsection.idのsentenceのみ返されること' do
@@ -108,9 +108,9 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
       end
     end
 
-    describe 'filter langage' do
+    describe 'filter q(language)' do
       before do
-        params['langage'] = 'TEST_KEYWORD'
+        params['q'] = 'TEST_KEYWORD'
       end
 
       it '指定した文字列がenに存在する場合、該当のsentenceが返されること' do
