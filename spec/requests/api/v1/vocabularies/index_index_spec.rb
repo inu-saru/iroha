@@ -139,5 +139,39 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
         )
       end
     end
+
+    describe 'filter integration' do
+      let(:section1) { create(:section, space: space1) }
+      let(:word1) { create(:word, space: space1) }
+
+      before do
+        word1
+
+        sentence1.section = section1
+        sentence1.en += 'TEST_KEYWORD'
+        sentence1.save
+
+        sentence2.section = section1
+        sentence2.save
+
+        word1.en += 'TEST_KEYWORD'
+        word1.save
+
+        params['sid'] = sentence1.section.id
+        params['vocabulary_type'] = 'sentence'
+        params['q'] = 'TEST_KEYWORD'
+      end
+
+      it '指定した検索項目に該当するsentenceのみが返されること' do
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+    end
   end
 end
