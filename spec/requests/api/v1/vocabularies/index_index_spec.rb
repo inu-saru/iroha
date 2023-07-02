@@ -126,8 +126,34 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
         )
       end
 
+      it '指定した文字列がenに存在する場合、文字列と大文字・小文字に関わらず、該当のsentenceが返されること' do
+        sentence1.en += 'test_keyword'
+        sentence1.save
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+
       it '指定した文字列がjaに存在する場合、該当のsentenceが返されること' do
         sentence1.ja += 'TEST_KEYWORD'
+        sentence1.save
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+
+      it '指定した文字列がjaに存在する場合、文字列と大文字・小文字に関わらず、該当のsentenceが返されること' do
+        sentence1.ja += 'test_keyword'
         sentence1.save
         subject
 
