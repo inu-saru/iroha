@@ -68,7 +68,6 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
 
     describe 'filter sid(section_id)' do
       let(:section1) { create(:section, space: space1) }
-      let(:sentence3) { create(:sentence, space: space1) }
 
       before do
         sentence1.section = section1
@@ -83,6 +82,18 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
         expect(json_response).to match(
           [
             hash_including(id: sentence1.id)
+          ]
+        )
+      end
+
+      it '指定したsection.idに-1を指定した場合、sectionが未指定のもののみ返されること' do
+        params['sid'] = -1
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence2.id)
           ]
         )
       end
