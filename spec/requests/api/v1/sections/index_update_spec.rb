@@ -7,7 +7,6 @@ RSpec.describe 'PUT /api/v1/spaces/:space_id/sections/:section_id' do
   let(:space_id) { space1.id }
   let(:section1) { create(:section, space: space1) }
   let(:section_id) { section1.id }
-  let(:other_space_section1) { create(:section_with) }
 
   before do
     create(:space_user, { space: space1, user: user1 })
@@ -39,7 +38,13 @@ RSpec.describe 'PUT /api/v1/spaces/:space_id/sections/:section_id' do
     end
 
     context '指定したspaceがownerでないsection.idの場合' do
-      let(:section_id) { other_space_section1.id }
+      let(:space2) { create(:space) }
+      let(:section_in_space2) { create(:section, space: space2) }
+      let(:section_id) { section_in_space2.id }
+
+      before do
+        create(:space_user, { space: space2, user: user1 })
+      end
 
       it '404エラーが返ること' do
         subject
@@ -48,6 +53,7 @@ RSpec.describe 'PUT /api/v1/spaces/:space_id/sections/:section_id' do
     end
 
     context 'userがownerでないspaceとsection.idを指定した場合' do
+      let(:other_space_section1) { create(:section_with) }
       let(:space_id) { other_space_section1.space.id }
       let(:section_id) { other_space_section1.id }
 

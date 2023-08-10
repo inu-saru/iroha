@@ -183,6 +183,10 @@ RSpec/MultipleExpectations:
 RSpec/MultipleMemoizedHelpers:
   Max: 10
 
+# defaultの3だと厳しいので
+RSpec/NestedGroups:
+  Max: 4
+
 # feature specで長くなるので
 RSpec/ExampleLength:
   Enabled: false
