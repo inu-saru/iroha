@@ -32,3 +32,5 @@ group :development do
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
 end
+
+gem "dockerfile-rails", ">= 1.5", :group => :development
