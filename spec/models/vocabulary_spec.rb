@@ -64,4 +64,44 @@ RSpec.describe Vocabulary do
       end
     end
   end
+
+  describe 'following / follower' do
+    let(:word1) { create(:word, space: space1) }
+    let(:relationship1) { create(:relationship, space: space1, follower: word1, followed: sentence1) }
+
+    before do
+      relationship1
+    end
+
+    it 'followingの情報が正しく取得できること' do
+      expect(word1.following.first).to eq(sentence1)
+    end
+
+    it 'followersの情報が正しく取得できること' do
+      expect(sentence1.followers.first).to eq(word1)
+    end
+  end
+
+  describe 'with(_relationship)' do
+    let(:word1) { create(:word, space: space1) }
+    let(:relationship1) { create(:relationship, space: space1, follower: word1, followed: sentence1) }
+
+    before do
+      relationship1
+    end
+
+    it 'followingがwithを介した場合に、中間テーブルの情報が取得できること' do
+      expect(word1.following.with.first.relationship_id).to eq(relationship1.id)
+      # TODO: arelで中間テーブルの値を付与した場合、enumがnumの状態で返ってしまう
+      expect(word1.following.with.first.language_type).to eq(relationship1.read_attribute_before_type_cast(:language_type))
+      expect(word1.following.with.first.positions).to eq(relationship1.positions)
+    end
+
+    it 'followerがwithを介した場合に、中間テーブルの情報が取得できること' do
+      expect(sentence1.followers.with.first.relationship_id).to eq(relationship1.id)
+      # TODO: arelで中間テーブルの値を付与した場合、enumがnumの状態で返ってしまう
+      expect(sentence1.followers.with.first.language_type).to eq(relationship1.read_attribute_before_type_cast(:language_type))
+      expect(sentence1.followers.with.first.positions).to eq(relationship1.positions)
+    end
+  end
 end
