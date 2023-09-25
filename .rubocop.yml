@@ -15,6 +15,7 @@ AllCops:
   Exclude:
     - "Gemfile"
     - "bin/**/*"
+    - "db/schema.rb"
     - "db/**/*"
     - "log/**/*"
     - "tmp/**/*"
