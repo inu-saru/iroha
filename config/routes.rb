@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       resources :spaces, controller: 'spaces/index' do
         resources :sections, controller: 'sections/index'
         resources :vocabularies, controller: 'vocabularies/index'
+        resources :relationships, controller: 'relationships/index', only: [:show, :create, :update, :destroy]
       end
     end
   end
