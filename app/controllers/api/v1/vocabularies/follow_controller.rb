@@ -6,12 +6,16 @@ class Api::V1::Vocabularies::FollowController < ApplicationController
 
   def following
     @following = vocabulary.following.with
+    @following = @following.merge(Relationship.filter_by_language_type(filtering_params[:language_type])) if filtering_params[:language_type].present?
+
     @pagy, @following = pagy(@following)
     render json: FollowResource.new(@following).serialize
   end
 
   def followers
     @followers = vocabulary.followers.with
+    @followers = @followers.merge(Relationship.filter_by_language_type(filtering_params[:language_type])) if filtering_params[:language_type].present?
+
     @pagy, @followers = pagy(@followers)
     render json: FollowResource.new(@followers).serialize
   end

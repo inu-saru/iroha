@@ -34,5 +34,31 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies/:vocabulary_id/followe
         expect(json_response).to eq json_attributes(FollowResource.new(sentence1.followers.with).serialize)
       end
     end
+
+    context 'query paramsにlanguage_typeを指定した場合' do
+      let(:word2) { create(:sentence, space: space1) }
+
+      before do
+        create(:relationship, space: space1, follower: word2, followed: sentence1, language_type: 'ja')
+      end
+
+      it 'enを指定した場合、language_type: en で関連づけられたのword1の情報が返ること' do
+        params['language_type'] = 'en'
+
+        subject
+        expect(response).to have_http_status(:ok)
+        expect(json_response.size).to eq 1
+        expect(json_response.first[:id]).to eq word1.id
+      end
+
+      it 'jaを指定した場合、language_type: ja で関連づけられたのword2の情報が返ること' do
+        params['language_type'] = 'ja'
+
+        subject
+        expect(response).to have_http_status(:ok)
+        expect(json_response.size).to eq 1
+        expect(json_response.first[:id]).to eq word2.id
+      end
+    end
   end
 end
