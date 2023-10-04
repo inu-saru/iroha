@@ -10,9 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_04_152603) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_23_084832) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "relationships", force: :cascade do |t|
+    t.bigint "space_id", null: false
+    t.bigint "follower_id", null: false
+    t.bigint "followed_id", null: false
+    t.integer "language_type", default: 0
+    t.integer "positions", default: [], array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["followed_id"], name: "index_relationships_on_followed_id"
+    t.index ["follower_id", "followed_id", "language_type"], name: "index_relationships_on_follower_id_followed_id_language_type", unique: true
+    t.index ["follower_id"], name: "index_relationships_on_follower_id"
+    t.index ["space_id"], name: "index_relationships_on_space_id"
+  end
 
   create_table "sections", force: :cascade do |t|
     t.bigint "space_id", null: false
@@ -65,6 +79,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_04_152603) do
     t.index ["space_id"], name: "index_vocabularies_on_space_id"
   end
 
+  add_foreign_key "relationships", "spaces"
+  add_foreign_key "relationships", "vocabularies", column: "followed_id"
+  add_foreign_key "relationships", "vocabularies", column: "follower_id"
   add_foreign_key "sections", "spaces"
   add_foreign_key "space_users", "spaces"
   add_foreign_key "space_users", "users"

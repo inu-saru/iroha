@@ -7,6 +7,24 @@ class Vocabulary < ApplicationRecord
 
   belongs_to :space
   belongs_to :section, optional: true
+  has_many :active_relationships, class_name: "Relationship",
+                                  foreign_key: "follower_id",
+                                  dependent: :destroy,
+                                  inverse_of: :follower
+  has_many :passive_relationships, class_name: "Relationship",
+                                   foreign_key: "followed_id",
+                                   dependent: :destroy,
+                                   inverse_of: :followed
+  has_many :following, through: :active_relationships, source: :followed do
+    def with
+      select('relationships.id AS relationship_id', :positions, :language_type, arel_table[Arel.star])
+    end
+  end
+  has_many :followers, through: :passive_relationships, source: :follower do
+    def with
+      select('relationships.id AS relationship_id', :positions, :language_type, arel_table[Arel.star])
+    end
+  end
 
   enum :vocabulary_type, { word: 0, idiom: 1, sentence: 2 }
 

@@ -17,7 +17,12 @@ Rails.application.routes.draw do
       end
       resources :spaces, controller: 'spaces/index' do
         resources :sections, controller: 'sections/index'
-        resources :vocabularies, controller: 'vocabularies/index'
+        resources :vocabularies, controller: 'vocabularies/index' do
+          member do
+            get :following, :followers, controller: 'vocabularies/follow'
+          end
+        end
+        resources :relationships, controller: 'relationships/index', only: [:show, :create, :update, :destroy]
       end
     end
   end
