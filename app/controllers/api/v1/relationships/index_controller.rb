@@ -30,8 +30,15 @@ class Api::V1::Relationships::IndexController < ApplicationController
 
   private
 
+  def batch_params
+    return @batch_params if defined? @batch_params
+
+    @batch_params = ActionController::Parameters.new(JSON.parse(request.body.read, symbolize_names: true))
+  end
+
   def relationship_params
-    params.require(:relationship).permit(:follower_id, :followed_id, :language_type, positions: [])
+    this_params = request.env['FROM_BATCH_API'].present? ? batch_params : params
+    this_params.require(:relationship).permit(:follower_id, :followed_id, :language_type, positions: [])
   end
 
   def relationships
