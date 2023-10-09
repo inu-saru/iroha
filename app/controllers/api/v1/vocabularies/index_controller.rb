@@ -1,5 +1,6 @@
 class Api::V1::Vocabularies::IndexController < ApplicationController
   include Spaceable
+  include Batchable
   before_action :authenticate_user!
   after_action { pagy_headers_merge(@pagy) if @pagy }
   wrap_parameters :vocabulary

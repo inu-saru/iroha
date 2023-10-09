@@ -1,5 +1,6 @@
 class Api::V1::Relationships::IndexController < ApplicationController
   include Spaceable
+  include Batchable
   before_action :authenticate_user!
   wrap_parameters :relationship
 
@@ -29,12 +30,6 @@ class Api::V1::Relationships::IndexController < ApplicationController
   end
 
   private
-
-  def batch_params
-    return @batch_params if defined? @batch_params
-
-    @batch_params = ActionController::Parameters.new(JSON.parse(request.body.read, symbolize_names: true))
-  end
 
   def relationship_params
     this_params = request.env['FROM_BATCH_API'].present? ? batch_params : params
