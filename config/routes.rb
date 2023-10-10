@@ -11,6 +11,7 @@ Rails.application.routes.draw do
                      }
   namespace :api do
     namespace :v1 do
+      # 'api/v1/batch' はmiddleware管理 -> lib/middlewares/batch_api.rb
       resources :ping, only: :index
       namespace :users do
         get 'me', to: 'me#show'
