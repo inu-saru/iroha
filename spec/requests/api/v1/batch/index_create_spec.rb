@@ -44,6 +44,8 @@ RSpec.describe 'POST /api/v1/batch' do
         expect do
           subject
         end.to change(Vocabulary, :count).by(1).and change(Relationship, :count).by(1)
+        expect(response).to have_http_status(:ok)
+
         expect(sentence1.followers.first[:en]).to eq 'new word'
         expect(sentence1.followers.first[:ja]).to eq '新しい単語'
         expect(sentence1.passive_relationships.first[:language_type]).to eq 'en'
@@ -87,6 +89,8 @@ RSpec.describe 'POST /api/v1/batch' do
           subject
         end.to not_change(Vocabulary, :count)
           .and not_change(Relationship, :count)
+        expect(response).to have_http_status(:bad_request)
+
         expect(json_response.first[:status]).to eq 400
         expect(json_response.second[:status]).to eq 404
       end
@@ -123,6 +127,8 @@ RSpec.describe 'POST /api/v1/batch' do
           subject
         end.to not_change(Vocabulary, :count)
           .and not_change(Relationship, :count)
+        expect(response).to have_http_status(:bad_request)
+
         expect(json_response.first[:status]).to eq 200
         expect(json_response.second[:status]).to eq 200
         expect(json_response.third[:status]).to eq 400

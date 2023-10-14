@@ -69,15 +69,16 @@ class BatchApi
   end
 
   def render_response(responses)
-    # 成功した最初のresponse、もしくは最初のresponseのheaderを全体のheaderとして利用
-    success_response = responses&.find { |response| response[:status] == 200 }
-    headers = success_response ? success_response[:headers] : responses[0][:headers]
+    # 失敗した最初のresponse、もしくは最初のresponseのstatus, headerを全体のものとして利用
+    faile_response = responses&.find { |response| response[:status] != 200 }
+    status = faile_response ? faile_response[:status] : responses[0][:status]
+    headers = faile_response ? faile_response[:headers] : responses[0][:headers]
 
     hash_json = JSON.generate(responses)
     # レスポンスの長さを更新します。
     headers = headers.merge('Content-Length' => hash_json.bytesize)
 
-    [200, headers, [hash_json]]
+    [status, headers, [hash_json]]
   end
 
   def success?(responses)
