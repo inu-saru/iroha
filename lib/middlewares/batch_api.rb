@@ -50,8 +50,10 @@ class BatchApi
   end
 
   def merge_store(override, response)
-    store_key = override['store'].keys[0]
-    @store.store(override['store'][store_key], response[:body][store_key])
+    override['store'].each do |hash|
+      key = hash['response_key']
+      @store.store(hash['as'], response[:body][key])
+    end
   end
 
   def process_request(env, override)

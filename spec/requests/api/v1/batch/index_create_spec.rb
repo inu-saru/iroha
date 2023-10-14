@@ -24,7 +24,7 @@ RSpec.describe 'POST /api/v1/batch' do
             url: "/api/v1/spaces/#{space_id}/vocabularies",
             body: { vocabulary: { en: 'new word', ja: '新しい単語' } },
             # 後段で利用するためresponse.id(post後に作成されるvocabulary_id)をfollower_idとして登録する
-            store: { id: 'follower_id' }
+            store: [{ response_key: 'id', as: 'follower_id' }]
           },
           {
             method: 'POST',
@@ -66,7 +66,7 @@ RSpec.describe 'POST /api/v1/batch' do
             url: "/api/v1/spaces/#{space_id}/vocabularies",
             body: { vocabulary: { en: valid_error_value, ja: '新しい単語' } },
             # 後段で利用するためresponse.id(post後に作成されるvocabulary_id)をfollower_idとして登録する
-            store: { id: 'follower_id' }
+            store: [{ response_key: 'id', as: 'follower_id' }]
           },
           {
             method: 'POST',
@@ -113,7 +113,7 @@ RSpec.describe 'POST /api/v1/batch' do
             url: "/api/v1/spaces/#{space_id}/vocabularies",
             body: { vocabulary: { en: 'new word', ja: '新しい単語' } },
             # 後段で利用するためresponse.id(post後に作成されるvocabulary_id)をfollower_idとして登録する
-            store: { id: 'follower_id' }
+            store: [{ response_key: 'id', as: 'follower_id' }]
           },
           duplicate_params,
           duplicate_params
