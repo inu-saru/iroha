@@ -2,7 +2,15 @@ class Api::V1::Relationships::IndexController < ApplicationController
   include Spaceable
   include Batchable
   before_action :authenticate_user!
+  after_action { pagy_headers_merge(@pagy) if @pagy }
   wrap_parameters :relationship
+
+  def index
+    @relationships = Vocabulary.filter(relationships, filtering_params)
+    @pagy, @relationships = pagy(@relationships)
+
+    render json: RelationshipResource.new(relationships).serialize
+  end
 
   def show
     render json: RelationshipResource.new(relationship).serialize
@@ -36,10 +44,14 @@ class Api::V1::Relationships::IndexController < ApplicationController
     this_params.require(:relationship).permit(:follower_id, :followed_id, :language_type, positions: [])
   end
 
+  def filtering_params
+    params.slice(:language_type, :follower_id, :followed_id)
+  end
+
   def relationships
     return @relationships if defined? @relationships
 
-    @relationships = space.relationships.order(created_at: :desc)
+    @relationships = space.relationships.order(created_at: :asc)
   end
 
   def relationship

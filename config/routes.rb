@@ -23,7 +23,7 @@ Rails.application.routes.draw do
             get :following, :followers, controller: 'vocabularies/follow'
           end
         end
-        resources :relationships, controller: 'relationships/index', only: [:show, :create, :update, :destroy]
+        resources :relationships, controller: 'relationships/index'
       end
     end
   end
