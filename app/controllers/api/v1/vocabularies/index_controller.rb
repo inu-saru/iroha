@@ -1,5 +1,6 @@
 class Api::V1::Vocabularies::IndexController < ApplicationController
   include Spaceable
+  include Batchable
   before_action :authenticate_user!
   after_action { pagy_headers_merge(@pagy) if @pagy }
   wrap_parameters :vocabulary
@@ -33,8 +34,15 @@ class Api::V1::Vocabularies::IndexController < ApplicationController
 
   private
 
+  def batch_params
+    return @batch_params if defined? @batch_params
+
+    @batch_params = ActionController::Parameters.new(JSON.parse(request.body.read, symbolize_names: true))
+  end
+
   def vocabulary_params
-    params.require(:vocabulary).permit(:vocabulary_type, :en, :ja, :section_id)
+    this_params = request.env['FROM_BATCH_API'].present? ? batch_params : params
+    this_params.require(:vocabulary).permit(:vocabulary_type, :en, :ja, :section_id)
   end
 
   def filtering_params

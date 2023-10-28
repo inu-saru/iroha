@@ -2,6 +2,7 @@ class ApplicationController < ActionController::API
   include Pagy::Backend
 
   rescue_from ActiveRecord::RecordInvalid, with: :bad_request
+  rescue_from ActiveRecord::RecordNotUnique, with: :bad_request
   rescue_from ActiveRecord::RecordNotFound, with: :not_found
   rescue_from ActionController::RoutingError, with: :not_found
 

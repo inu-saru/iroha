@@ -1,5 +1,6 @@
 class Api::V1::Relationships::IndexController < ApplicationController
   include Spaceable
+  include Batchable
   before_action :authenticate_user!
   wrap_parameters :relationship
 
@@ -31,7 +32,8 @@ class Api::V1::Relationships::IndexController < ApplicationController
   private
 
   def relationship_params
-    params.require(:relationship).permit(:follower_id, :followed_id, :language_type, positions: [])
+    this_params = request.env['FROM_BATCH_API'].present? ? batch_params : params
+    this_params.require(:relationship).permit(:follower_id, :followed_id, :language_type, positions: [])
   end
 
   def relationships
