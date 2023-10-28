@@ -11,6 +11,7 @@ Rails.application.routes.draw do
                      }
   namespace :api do
     namespace :v1 do
+      # 'api/v1/batch' はmiddleware管理 -> lib/middlewares/batch_api.rb
       resources :ping, only: :index
       namespace :users do
         get 'me', to: 'me#show'
@@ -22,7 +23,7 @@ Rails.application.routes.draw do
             get :following, :followers, controller: 'vocabularies/follow'
           end
         end
-        resources :relationships, controller: 'relationships/index', only: [:show, :create, :update, :destroy]
+        resources :relationships, controller: 'relationships/index'
       end
     end
   end

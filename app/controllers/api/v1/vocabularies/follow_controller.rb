@@ -5,7 +5,7 @@ class Api::V1::Vocabularies::FollowController < ApplicationController
   wrap_parameters :vocabulary
 
   def following
-    @following = vocabulary.following.with
+    @following = vocabulary.following.with.order(:created_at)
     @following = @following.merge(Relationship.filter_by_language_type(filtering_params[:language_type])) if filtering_params[:language_type].present?
 
     @pagy, @following = pagy(@following)
@@ -13,7 +13,7 @@ class Api::V1::Vocabularies::FollowController < ApplicationController
   end
 
   def followers
-    @followers = vocabulary.followers.with
+    @followers = vocabulary.followers.with.order(:created_at)
     @followers = @followers.merge(Relationship.filter_by_language_type(filtering_params[:language_type])) if filtering_params[:language_type].present?
 
     @pagy, @followers = pagy(@followers)
