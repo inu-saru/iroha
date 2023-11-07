@@ -7,9 +7,9 @@ require "csv"
   # sectionなしのsentence
   3.times { FactoryBot.create(:sentence, space:) }
   # sectionありのsentence
-  CSV.foreach('db/csv/duo_light.csv') do |row|
-    section = Section.find_or_create_by(space:, name: row[0])
-    FactoryBot.create(:sentence, space:, en: row[1], ja: row[2], section:)
+  CSV.foreach('db/csv/duo_light.csv', headers: true) do |row|
+    section = Section.find_or_create_by(space:, name: row['section'])
+    FactoryBot.create(:sentence, space:, en: row['en'], ja: row['ja'], section:)
   end
   # relationship
   CSV.foreach('db/csv/duo_word_light.csv', headers: true) do |row|
