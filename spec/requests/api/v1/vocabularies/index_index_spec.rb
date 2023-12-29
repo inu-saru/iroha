@@ -210,5 +210,45 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
         )
       end
     end
+
+    describe 'sort' do
+      it 'sortの指定がない場合、日付の降順で帰ること' do
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence2.id),
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+
+      it 'sort: date_ascを指定した場合、作成日の昇順で返されること' do
+        params['sort'] = 'date_asc'
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id),
+            hash_including(id: sentence2.id)
+          ]
+        )
+      end
+
+      it 'sort: date_descを指定した場合、作成日の降順で返されること' do
+        params['sort'] = 'date_desc'
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence2.id),
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+    end
   end
 end
