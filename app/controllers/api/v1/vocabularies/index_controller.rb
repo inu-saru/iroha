@@ -52,7 +52,12 @@ class Api::V1::Vocabularies::IndexController < ApplicationController
   def vocabularies
     return @vocabularies if defined? @vocabularies
 
-    @vocabularies = space.vocabularies.order(created_at: :desc)
+    @vocabularies = case params[:sort]
+                    when 'date_asc'
+                      space.vocabularies.order(created_at: :asc)
+                    else
+                      space.vocabularies.order(created_at: :desc)
+                    end
   end
 
   def vocabulary
