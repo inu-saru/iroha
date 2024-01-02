@@ -1,0 +1,583 @@
+sction,language_type,en,ja,positions,followed
+section1,word,respect,～（気持ち・意見など）を尊重する、～を尊敬する,[2],We must respect the will of the individual.
+section1,word,will,意思,[4],We must respect the will of the individual.
+section1,word,individual,個人,[7],We must respect the will of the individual.
+section1,word,Take it easy.,気楽にやれ,"[0,1,2]",Take it easy. I can assure you that everything will turn out fine.
+section1,word,assure A (that),A(人)に～を確約する[保証する],[6],Take it easy. I can assure you that everything will turn out fine.
+section1,word,turn out (to be) ～,(最終的に)～という結果になる,"[11,12]",Take it easy. I can assure you that everything will turn out fine.
+section1,word,let go of ～/let ～go,～を離す、～を捨てる,"[0,1,2]",Let go of your negative outlook on life. Always maintain a positive attitude.
+section1,word,negative,悲観的な,[4],Let go of your negative outlook on life. Always maintain a positive attitude.
+section1,word,outlook (on～),(～に対する)見方[態度]、～観,[5],Let go of your negative outlook on life. Always maintain a positive attitude.
+section1,word,maintain,～(関係など)を維持する,[10],Let go of your negative outlook on life. Always maintain a positive attitude.
+section1,word,positive,積極的な、前向きな,[12],Let go of your negative outlook on life. Always maintain a positive attitude.
+section1,word,attitude (to/toward～),(～に対する)態度,[14],Let go of your negative outlook on life. Always maintain a positive attitude.
+section1,word,fair,公平な,[3],"You should be fair to everyone regardless of national origin, gender, or creed."
+section1,word,regardless of ～,～にかかわらず,[6],"You should be fair to everyone regardless of national origin, gender, or creed."
+section1,word,national,国の、国内の,[9],"You should be fair to everyone regardless of national origin, gender, or creed."
+section1,word,origin,起源、生まれ,[9],"You should be fair to everyone regardless of national origin, gender, or creed."
+section1,word,gender,性別,[10],"You should be fair to everyone regardless of national origin, gender, or creed."
+section1,word,creed,(宗教上の)信条,[12],"You should be fair to everyone regardless of national origin, gender, or creed."
+section1,word,equality,平等,[0],Equality is guaranteed by the Constitution.
+section1,word,guarantee～,～を保証する、～を約束する,[2],Equality is guaranteed by the Constitution.
+section1,word,constitution,憲法,[5],Equality is guaranteed by the Constitution.
+section1,word,lean,(-against[on]～)～に寄り掛かる,[1],He leaned against the pillar and gazed at the Statue of Liberty.
+section1,word,pillar,柱、支柱,[4],He leaned against the pillar and gazed at the Statue of Liberty.
+section1,word,gaze (at～),(～を)じっと見つめる,[6],He leaned against the pillar and gazed at the Statue of Liberty.
+section1,word,statue,彫像,[9],He leaned against the pillar and gazed at the Statue of Liberty.
+section1,word,liberty,自由,[11],He leaned against the pillar and gazed at the Statue of Liberty.
+section1,word,pass by (～),(～の)そばを通り過ぎる,"[2, 3]",A woman passed by me giving off a subtle scent of perfume. It reminded me of my ex-girlfriend.
+section1,word,give off ～,～(臭い・光・熱)を発する,"[5,6]",A woman passed by me giving off a subtle scent of perfume. It reminded me of my ex-girlfriend.
+section1,word,subtle,かすかな,[9],A woman passed by me giving off a subtle scent of perfume. It reminded me of my ex-girlfriend.
+section1,word,scent,香り,[11],A woman passed by me giving off a subtle scent of perfume. It reminded me of my ex-girlfriend.
+section1,word,perfume,香水,[14],A woman passed by me giving off a subtle scent of perfume. It reminded me of my ex-girlfriend.
+section1,word,remind A of B,AにBを思い出させる,[17],A woman passed by me giving off a subtle scent of perfume. It reminded me of my ex-girlfriend.
+section1,word,ex-,前の-,[21],A woman passed by me giving off a subtle scent of perfume. It reminded me of my ex-girlfriend.
+section1,word,smell (～),(～な)においがする,[2],Natto smells awful but tastes terrific.
+section1,word,awful,ひどい,[3],Natto smells awful but tastes terrific.
+section1,word,taste～,～な味がする,[5],Natto smells awful but tastes terrific.
+section1,word,terrific,すばらしい,[6],Natto smells awful but tastes terrific.
+section1,word,soaked,(雨などで)びしょ濡れの,[1],"I'm soaked with sweat. ""Stand back! You stink. Take a shower."""
+section1,word,sweat,汗,[3],"I'm soaked with sweat. ""Stand back! You stink. Take a shower."""
+section1,word,stand back,(邪魔・迷惑だから)後ろに下がる,"[5,6]","I'm soaked with sweat. ""Stand back! You stink. Take a shower."""
+section1,word,stink,悪臭がする、(ひどく)臭い,[8],"I'm soaked with sweat. ""Stand back! You stink. Take a shower."""
+section1,word,take a shower,シャワーを浴びる,"[10, 11, 12]","I'm soaked with sweat. ""Stand back! You stink. Take a shower."""
+section2,word,be beside oneself (with～),(～で)ひどく興奮する、取り乱す,[],Bob was so beside himself that he could scarcely tell fact from fiction.
+section2,word,scarcely,ほとんど(～し)ない,[],Bob was so beside himself that he could scarcely tell fact from fiction.
+section2,word,tell A from B,[通例can-]AをBと区別する,[],Bob was so beside himself that he could scarcely tell fact from fiction.
+section2,word,fact,事実、現実,[],Bob was so beside himself that he could scarcely tell fact from fiction.
+section2,word,fiction,作り話、虚構,[],Bob was so beside himself that he could scarcely tell fact from fiction.
+section2,word,novel,(長編)小説(作品),[],"His new nobel, which combines prose with his gift for poetry, is going to be published."
+section2,word,combine A with[and] B,AとBを組み合わせる,[],"His new nobel, which combines prose with his gift for poetry, is going to be published."
+section2,word,prose,散文,[],"His new nobel, which combines prose with his gift for poetry, is going to be published."
+section2,word,gift,(天賦の)才能,[],"His new nobel, which combines prose with his gift for poetry, is going to be published."
+section2,word,poetry,(文学の一分野の)詩,[],"His new nobel, which combines prose with his gift for poetry, is going to be published."
+section2,word,publish,～を出版する,[],"His new nobel, which combines prose with his gift for poetry, is going to be published."
+section2,word,up-to-date～,(情報などが)最新の～,[],An up-to-date edition of the encyclopedia will come out next month.
+section2,word,edition,(本などの)版,[],An up-to-date edition of the encyclopedia will come out next month.
+section2,word,encyclopedia,百科事典,[],An up-to-date edition of the encyclopedia will come out next month.
+section2,word,come out,(新製品が)発売される、(本が)出版される,[],An up-to-date edition of the encyclopedia will come out next month.
+section2,word,translate (～) (from A into B),(～を)(AからBに)翻訳する,[],Ms. Yamada translated the fascinating fairy tale into plain Japanese.
+section2,word,fascinating,(人を)魅了する,[],Ms. Yamada translated the fascinating fairy tale into plain Japanese.
+section2,word,fairy、fairy tale,妖精、おとぎ話,[],Ms. Yamada translated the fascinating fairy tale into plain Japanese.
+section2,word,tale,話、物語,[],Ms. Yamada translated the fascinating fairy tale into plain Japanese.
+section2,word,plain,平易な,[],Ms. Yamada translated the fascinating fairy tale into plain Japanese.
+section2,word,following,以下の～,[],The following passage is quoted from a well-known fable.
+section2,word,passage,(文章などの)一節,[],The following passage is quoted from a well-known fable.
+section2,word,quote (～),(～を)引用する,[],The following passage is quoted from a well-known fable.
+section2,word,well-known,有名な,[],The following passage is quoted from a well-known fable.
+section2,word,fable,寓話,[],The following passage is quoted from a well-known fable.
+section2,word,be familiar with,～を(よく)知っている,[],"Are you familiar with contemporary literature? ""I know next to nothing about it."""
+section2,word,contemporary,現代の,[],"Are you familiar with contemporary literature? ""I know next to nothing about it."""
+section2,word,literature,文学,[],"Are you familiar with contemporary literature? ""I know next to nothing about it."""
+section2,word,next to ～,ほとんど～、～の隣に,[],"Are you familiar with contemporary literature? ""I know next to nothing about it."""
+section2,word,at times,たまに、時々,[],"Are you familiar with contemporary literature? ""I know next to nothing about it."""
+section2,word,confuse A with[and] B,AとBを混同する,[],"At times I confuse ""curve"" with ""carve."""
+section2,word,curve,曲線、(道路などの)カーブ,[],"At times I confuse ""curve"" with ""carve."""
+section2,word,carve,～を彫る,[],"At times I confuse ""curve"" with ""carve."""
+section2,word,shy,恥ずかしがりの,[],Don't be shy. Your pronunciation is more or less correct.
+section2,word,pronunciation,発音,[],Don't be shy. Your pronunciation is more or less correct.
+section2,word,more or less,だいたい,[],Don't be shy. Your pronunciation is more or less correct.
+section2,word,correct,正しい,[],Don't be shy. Your pronunciation is more or less correct.
+section2,word,article,記事,[],This article contains tips for those who are eager to increase their vocabulary.
+section2,word,contain ～,～を含んでいる,[],This article contains tips for those who are eager to increase their vocabulary.
+section2,word,tip,役立つ情報,[],This article contains tips for those who are eager to increase their vocabulary.
+section2,word,those who～,～という人たち,[],This article contains tips for those who are eager to increase their vocabulary.
+section2,word,be eager to do,しきりに～したがっている,[],This article contains tips for those who are eager to increase their vocabulary.
+section2,word,increase (～),～を増やす,[],This article contains tips for those who are eager to increase their vocabulary.
+section2,word,vocabulary,語彙,[],This article contains tips for those who are eager to increase their vocabulary.
+section2,word,latest,最新の,[],His latest works are on display at the city hall. They are fabulous beyond description.
+section2,word,work,作品、仕事、作業,[],His latest works are on display at the city hall. They are fabulous beyond description.
+section2,word,be on display,展示されている,[],His latest works are on display at the city hall. They are fabulous beyond description.
+section2,word,city hall,市庁舎,[],His latest works are on display at the city hall. They are fabulous beyond description.
+section2,word,fabulous,すてきな<女性的>,[],His latest works are on display at the city hall. They are fabulous beyond description.
+section2,word,beyond description,【副】言葉では表せない(ほど),[],His latest works are on display at the city hall. They are fabulous beyond description.
+section2,word,move over,(人が座れるように)席を詰める,[],"Could you move over a little? ""Oh, sorry. I didn't realize I was taking up so much space."""
+section2,word,realize ～,～ということに気付く,[],"Could you move over a little? ""Oh, sorry. I didn't realize I was taking up so much space."""
+section2,word,take up ～,(必要以上に)～(空間・時間など)を取る,[],"Could you move over a little? ""Oh, sorry. I didn't realize I was taking up so much space."""
+section2,word,ugly,醜い、不格好[不細工]な,[],"What's this ugly object? ""This is a piece of abstract art!"""
+section2,word,object,物体、物,[],"What's this ugly object? ""This is a piece of abstract art!"""
+section2,word,a piece of ～,1つ[1個]の,[],"What's this ugly object? ""This is a piece of abstract art!"""
+section2,word,abstract,抽象的な,[],"What's this ugly object? ""This is a piece of abstract art!"""
+section3,word,beg (～),(～に)すがってお願いをする,[],"I begged Richie to lend me a hundred bucks, but he shook his head, saying, ""I'm broke, too."""
+section3,word,lend A B(= lend B to A),A(人)にB(物・金)を貸す,[],"I begged Richie to lend me a hundred bucks, but he shook his head, saying, ""I'm broke, too."""
+section3,word,buck,ドル,[],"I begged Richie to lend me a hundred bucks, but he shook his head, saying, ""I'm broke, too."""
+section3,word,shake one's head,NOと言う、首を横に振る,[],"I begged Richie to lend me a hundred bucks, but he shook his head, saying, ""I'm broke, too."""
+section3,word,be (flat) broke,(全然)お金がない、すっからかんだ,[],"I begged Richie to lend me a hundred bucks, but he shook his head, saying, ""I'm broke, too."""
+section3,word,be apt to do,～しがちである,[],"I'm apt to buy things on impulse whenever something is on sale."" ""So am I."
+section3,word,on impulse,衝動的に,[],"I'm apt to buy things on impulse whenever something is on sale."" ""So am I."
+section3,word,on sale,バーゲン[特売]で,[],"I'm apt to buy things on impulse whenever something is on sale."" ""So am I."
+section3,word,So am I.,(先行文に答えて)私もそうです[同じです],[],"I'm apt to buy things on impulse whenever something is on sale."" ""So am I."
+section3,word,as it is,(文頭で、残念ながら)実際のところ,[],"As it is, ordinary people cannot afford to purchase such luxuries."
+section3,word,ordinary,普通の,[],"As it is, ordinary people cannot afford to purchase such luxuries."
+section3,word,can afford to do,～する余裕がある,[],"As it is, ordinary people cannot afford to purchase such luxuries."
+section3,word,purchase,～を購入する,[],"As it is, ordinary people cannot afford to purchase such luxuries."
+section3,word,luxury,贅沢品,[],"As it is, ordinary people cannot afford to purchase such luxuries."
+section3,word,anticipate,～を予期する,[],"As we anticipated, the unemployment rate has risen three quarters in a row."
+section3,word,unemployment,失業(状態),[],"As we anticipated, the unemployment rate has risen three quarters in a row."
+section3,word,rate,率、割合,[],"As we anticipated, the unemployment rate has risen three quarters in a row."
+section3,word,rise,(数・量などが)上がる、増える,[],"As we anticipated, the unemployment rate has risen three quarters in a row."
+section3,word,quarter,四半期,[],"As we anticipated, the unemployment rate has risen three quarters in a row."
+section3,word,in a row,連続で,[],"As we anticipated, the unemployment rate has risen three quarters in a row."
+section3,word,cut down to～,～を減らす,[],"I have to cut down on my expenses, so from now on, I'm going to keep track of them on a daily basis."
+section3,word,expense,出費,[],"I have to cut down on my expenses, so from now on, I'm going to keep track of them on a daily basis."
+section3,word,from now on,これからは,[],"I have to cut down on my expenses, so from now on, I'm going to keep track of them on a daily basis."
+section3,word,keep track of,～の動き[流れ]を常に記録する,[],"I have to cut down on my expenses, so from now on, I'm going to keep track of them on a daily basis."
+section3,word,daily,毎日の,[],"I have to cut down on my expenses, so from now on, I'm going to keep track of them on a daily basis."
+section3,word,on a ～ basis,～という基準[やり方]で,[],"I have to cut down on my expenses, so from now on, I'm going to keep track of them on a daily basis."
+section3,word,in any case,とにかく、いずれにせよ,[],"In any case, the union has to compromise to a certain extent."
+section3,word,union,労働組合,[],"In any case, the union has to compromise to a certain extent."
+section3,word,compromise (on),(～について)妥協する,[],"In any case, the union has to compromise to a certain extent."
+section3,word,certain,(特定はできないが)ある,[],"In any case, the union has to compromise to a certain extent."
+section3,word,to ～ extent,～の程度,[],"In any case, the union has to compromise to a certain extent."
+section3,word,competent,(要求される一定の)能力[技能]を持つ,[],"Competent mechanics are in great demand, so they earn decent wages."
+section3,word,mechanic,(機械の)整備士、修理士,[],"Competent mechanics are in great demand, so they earn decent wages."
+section3,word,be in demand,需要がある,[],"Competent mechanics are in great demand, so they earn decent wages."
+section3,word,earn,～(金)を稼ぐ,[],"Competent mechanics are in great demand, so they earn decent wages."
+section3,word,decent,かなりよい,[],"Competent mechanics are in great demand, so they earn decent wages."
+section3,word,wages,(時間・日数などで計算される)賃金,[],"Competent mechanics are in great demand, so they earn decent wages."
+section3,word,president,大統領,[],The president announced a concrete plan to carry out welfare reform.
+section3,word,announce,～を公表[発表]する,[],The president announced a concrete plan to carry out welfare reform.
+section3,word,concrete,(計画などが)具体的な,[],The president announced a concrete plan to carry out welfare reform.
+section3,word,carry～out,(計画・任務など)～を実行する,[],The president announced a concrete plan to carry out welfare reform.
+section3,word,welfare,福祉,[],The president announced a concrete plan to carry out welfare reform.
+section3,word,reform,(制度などの)改革,[],The president announced a concrete plan to carry out welfare reform.
+section3,word,policy,政策,[],His policy will no doubt lead to dismal consequences. It needs a thorough review.
+section3,word,no doubt,きっと,[],His policy will no doubt lead to dismal consequences. It needs a thorough review.
+section3,word,lead to,～(結果)に至る,[],His policy will no doubt lead to dismal consequences. It needs a thorough review.
+section3,word,dismal,(結果・状況などが)気分を暗くさせる,[],His policy will no doubt lead to dismal consequences. It needs a thorough review.
+section3,word,consequence,(当然の)結果、影響,[],His policy will no doubt lead to dismal consequences. It needs a thorough review.
+section3,word,thorough,(調査などが)徹底的な,[],His policy will no doubt lead to dismal consequences. It needs a thorough review.
+section3,word,review,見直し,[],His policy will no doubt lead to dismal consequences. It needs a thorough review.
+section3,word,it goes without saying that ～,～は言うまでもない,[],It goes without saying that the aging of society is inevitable.
+section3,word,aging,高齢化,[],It goes without saying that the aging of society is inevitable.
+section3,word,inevitable,避けられない,[],It goes without saying that the aging of society is inevitable.
+section3,word,take a look at ～,～をちょっと見る,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,chart,図、表,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,indicate,～(事実・長考など）を示す,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,juvenile,青少年の、少年の,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,delinquency,非行,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,be on the increase,増加している,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,alarming,(悪い事の増加が)深刻な,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,at a ～ rate,～なペース[割合]で,[],Please take a look at this chart. It indicates that juvenile delinquency is on the increase at an alarming rate.
+section3,word,district,地区,[],"In many business districts, there are a lot of vacant lots which have been for sale for years."
+section3,word,a lot of ～/lots of ～,たくさんの(数の),[],"In many business districts, there are a lot of vacant lots which have been for sale for years."
+section3,word,vacant,(家・座席などが)誰もいない,[],"In many business districts, there are a lot of vacant lots which have been for sale for years."
+section3,word,lot,1区画,[],"In many business districts, there are a lot of vacant lots which have been for sale for years."
+section3,word,be for sale,売り物である,[],"In many business districts, there are a lot of vacant lots which have been for sale for years."
+section3,word,population,人口,[],The population density in the metropolis is gradually decreasing.
+section3,word,density,密度,[],The population density in the metropolis is gradually decreasing.
+section3,word,metropolis,大都市,[],The population density in the metropolis is gradually decreasing.
+section3,word,gradually,徐々に,[],The population density in the metropolis is gradually decreasing.
+section3,word,decrease,減少[低下]する,[],The population density in the metropolis is gradually decreasing.
+section3,word,in all likelihood,ほぼ間違いなく,[],"In all likelihood, the birthrate will continue to decline steadily for years to come."
+section3,word,birthrate,出生率,[],"In all likelihood, the birthrate will continue to decline steadily for years to come."
+section3,word,continue to do,～し続ける,[],"In all likelihood, the birthrate will continue to decline steadily for years to come."
+section3,word,decline,減少する,[],"In all likelihood, the birthrate will continue to decline steadily for years to come."
+section3,word,steadily,着実に,[],"In all likelihood, the birthrate will continue to decline steadily for years to come."
+section3,word,～ to come,これから来る～,[],"In all likelihood, the birthrate will continue to decline steadily for years to come."
+section4,word,power,(電気・ガスなどの)エネルギー,[],The power plant supplies the remote county with electricity.
+section4,word,"plant, power plant",工場、発電所,[],You are not allowed to operate this device without permission.
+section4,word,supply A (with B),Aに(Bを)供給する,[],You are not allowed to operate this device without permission.
+section4,word,remote,(距離などが)遠く離れた,[],You are not allowed to operate this device without permission.
+section4,word,county,(米国の)郡,[],You are not allowed to operate this device without permission.
+section4,word,electricity,電気,[],You are not allowed to operate this device without permission.
+section4,word,allow A to do,Aに～することを許す,[],You are not allowed to operate this device without permission.
+section4,word,operate,～(機械)を動かす[操作する],[],You are not allowed to operate this device without permission.
+section4,word,device,装置,[],You are not allowed to operate this device without permission.
+section4,word,permission,(正式な)許可,[],You are not allowed to operate this device without permission.
+section4,word,in (actual) fact,実際は,[],"In fact, the inhabitants have been exposed to radiation."
+section4,word,inhabitant,住民,[],"In fact, the inhabitants have been exposed to radiation."
+section4,word,expose A to B,AをBにさらす,[],"In fact, the inhabitants have been exposed to radiation."
+section4,word,radiation,放射能、放射線,[],"In fact, the inhabitants have been exposed to radiation."
+section4,word,cannot do～too much,いくら～しすぎてもし過ぎることはない,[],One cannot emphasize too much the potential danger of nuclear energy.
+section4,word,emphasize,～を強調[力説]する,[],One cannot emphasize too much the potential danger of nuclear energy.
+section4,word,potential,潜在的な,[],One cannot emphasize too much the potential danger of nuclear energy.
+section4,word,danger,危険、危険性,[],One cannot emphasize too much the potential danger of nuclear energy.
+section4,word,nuclear,核の、原子力の,[],One cannot emphasize too much the potential danger of nuclear energy.
+section4,word,energy,(石油・電気などの）エネルギー,[],One cannot emphasize too much the potential danger of nuclear energy.
+section4,word,press,[the-]報道陣[機関],[],"For years the press overlooked the problem. But now, if anything, they are making too much of it."
+section4,word,overlook,(不注意で)～を見落とす[見過ごす],[],"For years the press overlooked the problem. But now, if anything, they are making too much of it."
+section4,word,if anything,むしろ、どちらかと言えば,[],"For years the press overlooked the problem. But now, if anything, they are making too much of it."
+section4,word,make ～ of A,Aに対して～な評価[判断]をする,[],"For years the press overlooked the problem. But now, if anything, they are making too much of it."
+section4,word,as well as ～,～だけではなく,[],"As well as cultivating grain, the farmer runs a grocery store."
+section4,word,cultivate,～(作物)を栽培する,[],"As well as cultivating grain, the farmer runs a grocery store."
+section4,word,grain,(集合的に)穀物,[],"As well as cultivating grain, the farmer runs a grocery store."
+section4,word,farmer,(近代的な)農業経営者,[],"As well as cultivating grain, the farmer runs a grocery store."
+section4,word,run,～を経営[運営]する,[],"As well as cultivating grain, the farmer runs a grocery store."
+section4,word,grocery store,食料雑貨店,[],"As well as cultivating grain, the farmer runs a grocery store."
+section4,word,research (into/on),(～に関する)研究[調査],[],The research institute was established in the late 1960s.
+section4,word,institute,理系の大学、組織,[],The research institute was established in the late 1960s.
+section4,word,establish,～を設立する,[],The research institute was established in the late 1960s.
+section4,word,late,(the[one's])～後半の,[],The research institute was established in the late 1960s.
+section4,word,1960s,1960年代,[],The research institute was established in the late 1960s.
+section4,word,Why don't you do ～？,～したら？,[],Why don't you consult Starr in person? He's by far the most prominent attorney around here.
+section4,word,consult ～ (about A),(Aに関して)～(専門家など)に相談する,[],Why don't you consult Starr in person? He's by far the most prominent attorney around here.
+section4,word,in person,(電話や代理人を使わず)本人と直接会って,[],Why don't you consult Starr in person? He's by far the most prominent attorney around here.
+section4,word,by far,(比較級・最上級を強めて)はるかに、間違いなく,[],Why don't you consult Starr in person? He's by far the most prominent attorney around here.
+section4,word,prominent,(人が)傑出した、著名な,[],Why don't you consult Starr in person? He's by far the most prominent attorney around here.
+section4,word,attorney,(米)弁護士,[],Why don't you consult Starr in person? He's by far the most prominent attorney around here.
+section4,word,write～down,(忘れないように)～を書き留める,[],"I'll write it down just in case, because I have a bad memory."
+section4,word,just in case,(文末に用いて)念のため,[],"I'll write it down just in case, because I have a bad memory."
+section4,word,have a bad memory,記憶力が悪い,[],"I'll write it down just in case, because I have a bad memory."
+section4,word,recommend (that) A (should) do,A(人)に～するのがいいと勧める,[],The lawyer recommended that his client take legal action against the insurance company.
+section4,word,client,(弁護士・設計事務所などの)依頼人、顧客,[],The lawyer recommended that his client take legal action against the insurance company.
+section4,word,legal,法的な,[],The lawyer recommended that his client take legal action against the insurance company.
+section4,word,take (～) action,(～な)行動を取る,[],The lawyer recommended that his client take legal action against the insurance company.
+section4,word,insurance,保険,[],The lawyer recommended that his client take legal action against the insurance company.
+section5,word,be entitled to do,～する権利がある,[],They are entitled to be compensated for their injuries.
+section5,word,compensate (A) for B,(A(人)の)B(損害)を保証する,[],They are entitled to be compensated for their injuries.
+section5,word,injury,けが、負傷,[],They are entitled to be compensated for their injuries.
+section5,word,so far,現在までに,[],"So far, no less than 200 people have died of the flu epidemic."
+section5,word,no less than,～もの(多くの),[],"So far, no less than 200 people have died of the flu epidemic."
+section5,word,die of[from],～（病気など)で死ぬ,[],"So far, no less than 200 people have died of the flu epidemic."
+section5,word,flu,[the-]インフルエンザ,[],"So far, no less than 200 people have died of the flu epidemic."
+section5,word,epidemic,(伝染病の)流行,[],"So far, no less than 200 people have died of the flu epidemic."
+section5,word,effect,効果,[],The effect of those pills is intense but brief.
+section5,word,pill,錠剤,[],The effect of those pills is intense but brief.
+section5,word,intense,(感情・勢いなどが)激しい、強烈な,[],The effect of those pills is intense but brief.
+section5,word,brief,短時間の、簡潔な,[],The effect of those pills is intense but brief.
+section5,word,have a habit of doing,～する(よくない)癖がある,[],He has a habit of biting his nails. It's absolutely disgusting.
+section5,word,bite,(～を)噛む,[],He has a habit of biting his nails. It's absolutely disgusting.
+section5,word,nail,爪,[],He has a habit of biting his nails. It's absolutely disgusting.
+section5,word,absolutely,全く,[],He has a habit of biting his nails. It's absolutely disgusting.
+section5,word,disgusting,ぞっとするような,[],He has a habit of biting his nails. It's absolutely disgusting.
+section5,word,grandma,おばあちゃん,[],He has a habit of biting his nails. It's absolutely disgusting.
+section5,word,strain,(無理をして)～(体の一部)を痛める,[],My grandma strained her back when she bent down to hug my son.
+section5,word,back,背中、腰,[],My grandma strained her back when she bent down to hug my son.
+section5,word,bend down[over],腰をかがめる,[],My grandma strained her back when she bent down to hug my son.
+section5,word,hug,～を(ぎゅっと)抱きしめる,[],My grandma strained her back when she bent down to hug my son.
+section5,word,stiff,(筋肉などが)凝った,[],"If you have a stiff neck, try an herbal remedy."
+section5,word,herbal,薬草の、漢方の,[],"If you have a stiff neck, try an herbal remedy."
+section5,word,remedy,治療(法),[],"If you have a stiff neck, try an herbal remedy."
+section5,word,medical,医学の,[],"If you have a stiff neck, try an herbal remedy."
+section5,word,breakthrough,(科学・技術などの)飛躍的な発展,[],Medical breakthroughs have brought about great benefits for humanity as a whole.
+section5,word,bring ～ about,～(変化など)をもたらす,[],Medical breakthroughs have brought about great benefits for humanity as a whole.
+section5,word,benefit,(非金銭的な)利益,[],Medical breakthroughs have brought about great benefits for humanity as a whole.
+section5,word,humanity,人類,[],Medical breakthroughs have brought about great benefits for humanity as a whole.
+section5,word,～ as a whole,～を全体[一つ]として,[],Medical breakthroughs have brought about great benefits for humanity as a whole.
+section5,word,apply A to B,A(理論など)をBに応用[適用]する,[],"We can't apply cloning techniques to cattle, let alone human beings. It's forbidden."
+section5,word,clone,～のクローンを作る,[],"We can't apply cloning techniques to cattle, let alone human beings. It's forbidden."
+section5,word,technique,(実用的な)技術,[],"We can't apply cloning techniques to cattle, let alone human beings. It's forbidden."
+section5,word,cattle,(畜産用の)牛,[],"We can't apply cloning techniques to cattle, let alone human beings. It's forbidden."
+section5,word,let alone ～,(否定文に続いて)～はなおさら(～でない),[],"We can't apply cloning techniques to cattle, let alone human beings. It's forbidden."
+section5,word,human(being),(神・動物・機械に対して)人間,[],"We can't apply cloning techniques to cattle, let alone human beings. It's forbidden."
+section5,word,forbid,(絶対的な圧力で)～を禁止する,[],"We can't apply cloning techniques to cattle, let alone human beings. It's forbidden."
+section5,word,whale,鯨,[],Whales are classified as mammals.
+section5,word,classify,～を分類する,[],Whales are classified as mammals.
+section5,word,mammal,哺乳動物,[],Whales are classified as mammals.
+section5,word,theory,理論、学説,[],The theory of evolution is beyond the reach of my imagination.
+section5,word,evolution,進化,[],The theory of evolution is beyond the reach of my imagination.
+section5,word,beyond[out of] the reach of,～の届かない範囲に,[],The theory of evolution is beyond the reach of my imagination.
+section5,word,imagination,想像力,[],The theory of evolution is beyond the reach of my imagination.
+section5,word,biologist,生物学者,[],The biologist is proud of his historic discovery and doesn't mind boasting about it.
+section5,word,be proud of,～を誇りに思う,[],The biologist is proud of his historic discovery and doesn't mind boasting about it.
+section5,word,historic,歴史的(に重要)な,[],The biologist is proud of his historic discovery and doesn't mind boasting about it.
+section5,word,discovery,発見,[],The biologist is proud of his historic discovery and doesn't mind boasting about it.
+section5,word,boast about[of],～を自慢げに話す,[],The biologist is proud of his historic discovery and doesn't mind boasting about it.
+section5,word,ethical,倫理上の、倫理的な,[],"On ethical grounds, they are opposed to so-called gene therapy."
+section5,word,on ～ grounds,～な理由から,[],"On ethical grounds, they are opposed to so-called gene therapy."
+section5,word,be opposed to,～に反対である,[],"On ethical grounds, they are opposed to so-called gene therapy."
+section5,word,so-called,いわゆる,[],"On ethical grounds, they are opposed to so-called gene therapy."
+section5,word,gene,遺伝子,[],"On ethical grounds, they are opposed to so-called gene therapy."
+section5,word,therapy,(特殊な)治療、療法,[],"On ethical grounds, they are opposed to so-called gene therapy."
+section5,word,initial,最初の,[],The initial symptoms of the disease are fever and a sore throat.
+section5,word,symptom,(病気の)兆候、症状,[],The initial symptoms of the disease are fever and a sore throat.
+section5,word,disease,病気,[],The initial symptoms of the disease are fever and a sore throat.
+section5,word,fever,(病気による)高熱,[],The initial symptoms of the disease are fever and a sore throat.
+section5,word,sore,(炎症などを起こして)痛い,[],The initial symptoms of the disease are fever and a sore throat.
+section5,word,throat,喉,[],The initial symptoms of the disease are fever and a sore throat.
+section5,word,structure,構造,[],The structure of the brain is complex.
+section5,word,brain,脳,[],The structure of the brain is complex.
+section5,word,complex,(構造などが)複雑な,[],The structure of the brain is complex.
+section5,word,owing to ～,～のために、～が理由で,[],"Owing to illness, some representatives were absent from the annual conference."
+section5,word,illness,病気,[],"Owing to illness, some representatives were absent from the annual conference."
+section5,word,representative,代表(者),[],"Owing to illness, some representatives were absent from the annual conference."
+section5,word,be absent from,～を欠席する,[],"Owing to illness, some representatives were absent from the annual conference."
+section5,word,annual,年に1度の,[],"Owing to illness, some representatives were absent from the annual conference."
+section5,word,conference,(公式の大きな)会議,[],"Owing to illness, some representatives were absent from the annual conference."
+section5,word,little by little,徐々に,[],"Little by little, my son-in-law is recovering from stomach cancer, and now he is in good spirits."
+section5,word,son-in-law,娘婿,[],"Little by little, my son-in-law is recovering from stomach cancer, and now he is in good spirits."
+section5,word,recover from,～(病気)から回復する,[],"Little by little, my son-in-law is recovering from stomach cancer, and now he is in good spirits."
+section5,word,stomach,胃,[],"Little by little, my son-in-law is recovering from stomach cancer, and now he is in good spirits."
+section5,word,cancer,癌,[],"Little by little, my son-in-law is recovering from stomach cancer, and now he is in good spirits."
+section5,word,be in ～ spirits,～な気分[精神状態]である,[],"Little by little, my son-in-law is recovering from stomach cancer, and now he is in good spirits."
+section5,word,fake,偽物の,[],"This is fake, isn't it?"" ""Hey, it's a genuine antique."" ""No way!"""
+section5,word,genuine,(物が)本物の,[],"This is fake, isn't it?"" ""Hey, it's a genuine antique."" ""No way!"""
+section5,word,antique,骨董品,[],"This is fake, isn't it?"" ""Hey, it's a genuine antique."" ""No way!"""
+section5,word,No way!,まさか(信じられない),[],"This is fake, isn't it?"" ""Hey, it's a genuine antique."" ""No way!"""
+section6,word,Anything else?,ほかに何か？,[],"Anything else? ""That's it."" ""For here or to go?"" ""To go."""
+section6,word,That's it!,(それで)以上です,[],"Anything else? ""That's it."" ""For here or to go?"" ""To go."""
+section6,word,For here or to go?,こちらでお召し上がりですか？それともお持ち帰りですか？,[],"Anything else? ""That's it."" ""For here or to go?"" ""To go."""
+section6,word,rug,敷物,[],"How much is this rug? ""$100 including tax."" ""OK, I'll take it."""
+section6,word,including,～を含めて,[],"How much is this rug? ""$100 including tax."" ""OK, I'll take it."""
+section6,word,tax,税金,[],"How much is this rug? ""$100 including tax."" ""OK, I'll take it."""
+section6,word,I'll take it.,それ[これ]にします[決めます],[],"How much is this rug? ""$100 including tax."" ""OK, I'll take it."""
+section6,word,pants,パンツ、ズボン,[],I don't think those pants look good on you. Try these on. They're really in now!
+section6,word,look good[nice] on,(服などが)～に似合う,[],I don't think those pants look good on you. Try these on. They're really in now!
+section6,word,try ～ on,～を試しに着てみる,[],I don't think those pants look good on you. Try these on. They're really in now!
+section6,word,be in,流行っている,[],I don't think those pants look good on you. Try these on. They're really in now!
+section6,word,get out (of),(～(小型車)から)降りる,[],"He got out of the cab in haste, saying, ""Keep the change."""
+section6,word,cab,タクシー,[],"He got out of the cab in haste, saying, ""Keep the change."""
+section6,word,in haste,急いで,[],"He got out of the cab in haste, saying, ""Keep the change."""
+section6,word,Keep the change.,おつりはいりません,[],"He got out of the cab in haste, saying, ""Keep the change."""
+section6,word,delivery,配達,[],Delivery service is available to our customers for a slight extra charge.
+section6,word,service,(便利な)サービス,[],Delivery service is available to our customers for a slight extra charge.
+section6,word,available,利用[入手・購入]可能な,[],Delivery service is available to our customers for a slight extra charge.
+section6,word,customer,客,[],Delivery service is available to our customers for a slight extra charge.
+section6,word,slight,(量・程度が)わずかな,[],Delivery service is available to our customers for a slight extra charge.
+section6,word,extra,追加の,[],Delivery service is available to our customers for a slight extra charge.
+section6,word,charge,料金,[],Delivery service is available to our customers for a slight extra charge.
+section6,word,It's on me.,(この支払は)私のおごりです,[],"It's on me. ""No. You treat me every time we eat out."" ""Well, okay. Let's split the check then."""
+section6,word,treat,～にごちそうする[ごほうびをあげる]、～を扱う,[],"It's on me. ""No. You treat me every time we eat out."" ""Well, okay. Let's split the check then."""
+section6,word,every time ～,～するときはいつでも,[],"It's on me. ""No. You treat me every time we eat out."" ""Well, okay. Let's split the check then."""
+section6,word,eat out,外食する,[],"It's on me. ""No. You treat me every time we eat out."" ""Well, okay. Let's split the check then."""
+section6,word,split the check,割り勘にする,[],"It's on me. ""No. You treat me every time we eat out."" ""Well, okay. Let's split the check then."""
+section6,word,check,伝票,[],"It's on me. ""No. You treat me every time we eat out."" ""Well, okay. Let's split the check then."""
+section6,word,hang out,何となく時間をすごす、ぶらぶらする,[],"While I was hanging out at the mall, I ran into Ken."
+section6,word,mall,(巨大な)ショッピングセンター[モール],[],"While I was hanging out at the mall, I ran into Ken."
+section6,word,run into,～に偶然出会う,[],"While I was hanging out at the mall, I ran into Ken."
+section6,word,be short of,～が不足している,[],"I was short of cash, so I withdrew the $100 that I had deposited in my bank account last week."
+section6,word,withdraw,～(預金など)を引き出す,[],"I was short of cash, so I withdrew the $100 that I had deposited in my bank account last week."
+section6,word,deposit,～(お金など)を預ける,[],"I was short of cash, so I withdrew the $100 that I had deposited in my bank account last week."
+section6,word,account,(銀行)口座,[],"I was short of cash, so I withdrew the $100 that I had deposited in my bank account last week."
+section6,word,on the[one's] way (to),(～に向かう)途中で,[],On her way home she was robbed of her purse.
+section6,word,rob A of B,A(人)からB(物・金)を奪う,[],On her way home she was robbed of her purse.
+section6,word,purse,{米}(女性用の)ハンドバッグ,[],On her way home she was robbed of her purse.
+section6,word,odd,奇妙な,[],"That's odd! Tell me how it happened. ""I'll explain it to you later."""
+section6,word,happen,(偶然・不意に)起こる,[],"That's odd! Tell me how it happened. ""I'll explain it to you later."""
+section6,word,explain A to B,AをB(人)に説明する,[],"That's odd! Tell me how it happened. ""I'll explain it to you later."""
+section6,word,curfew,門限,[],My parents gave me a 6 pm curfew as a punishment because I broke my promise.
+section6,word,punishment,罰,[],My parents gave me a 6 pm curfew as a punishment because I broke my promise.
+section6,word,break one's promise[word],約束を破る,[],My parents gave me a 6 pm curfew as a punishment because I broke my promise.
+section6,word,as the proverb goes[says],諺にある通り,[],"As the proverb goes, ""The end justifies the means."""
+section6,word,end,(最終)目的,[],"As the proverb goes, ""The end justifies the means."""
+section6,word,justify,～を正当化する,[],"As the proverb goes, ""The end justifies the means."""
+section6,word,means,手段,[],"As the proverb goes, ""The end justifies the means."""
+section6,word,Now (that) ～,(さあ[いまや])～なのだから,[],"Now that I've found that there's no one to turn to, I'll have to stand on my own two feet."
+section6,word,turn to,(辛い[困った]時)～に頼る,[],"Now that I've found that there's no one to turn to, I'll have to stand on my own two feet."
+section6,word,stand on one's own two feet,自立する,[],"Now that I've found that there's no one to turn to, I'll have to stand on my own two feet."
+section7,word,chairman/chairwoman,(会議などの)議長,[],"The chairman cut me off, saying, ""Time to wind things up. Let's take a vote."""
+section7,word,cut ～ off,～の話を遮る,[],"The chairman cut me off, saying, ""Time to wind things up. Let's take a vote."""
+section7,word,wind (～) up,(～)を終わりにする,[],"The chairman cut me off, saying, ""Time to wind things up. Let's take a vote."""
+section7,word,take a vote,決を採る,[],"The chairman cut me off, saying, ""Time to wind things up. Let's take a vote."""
+section7,word,exchange,～を交換する,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,frank,(よい意味で)率直な,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,opinion,意見、考え,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,meeting,(会社などの)会議、打ち合わせ,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,consensus,(グループ内の)まとまった意見,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,have[be] yet to do,まだ～してない,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,reach,(合計・結論)～に達する,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,regarding,～に関して,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,matter,事柄、問題,[],"We exchanged frank opinions in the meeting, but consensus is yet to be reached regarding this matter."
+section7,word,agree with,～(人)と同じ意見である,[],"Do you agree or disagree with him? ""I'm on his side."""
+section7,word,disagree with,～(人)と意見が異なる,[],"Do you agree or disagree with him? ""I'm on his side."""
+section7,word,be on one's side,～の味方[側]である,[],"Do you agree or disagree with him? ""I'm on his side."""
+section7,word,strictly speaking,厳密に言うと,[],"Strictly speaking, his view differs somewhat from mine."
+section7,word,view,考え、見解,[],"Strictly speaking, his view differs somewhat from mine."
+section7,word,differ from,～と異なる,[],"Strictly speaking, his view differs somewhat from mine."
+section7,word,somewhat,いくらか,[],"Strictly speaking, his view differs somewhat from mine."
+section7,word,go over,～(の全体)をよく見る[説明する/考える],[],Could you go over it again? I couldn't make out what you were getting at.
+section7,word,make ～ out,[通例 can-]～（わかりにくいこと)を理解できる,[],Could you go over it again? I couldn't make out what you were getting at.
+section7,word,be getting at,～を言おうとしている,[],Could you go over it again? I couldn't make out what you were getting at.
+section7,word,back (～) up,～を後援[支持]する,[],"No one backed me up at first, but eventually I talked everyone into going along with my plan."
+section7,word,at first,最初は,[],"No one backed me up at first, but eventually I talked everyone into going along with my plan."
+section7,word,eventually,最終的には,[],"No one backed me up at first, but eventually I talked everyone into going along with my plan."
+section7,word,talk A into doing,A(人)を説得して～させる,[],"No one backed me up at first, but eventually I talked everyone into going along with my plan."
+section7,word,go along with,～(意見など)に賛成する,[],"No one backed me up at first, but eventually I talked everyone into going along with my plan."
+section7,word,admire,～をすばらしい[すごい]と思う、～に感心する,[],"I admire your perseverance, courage and wisdom. ""You flatter me!"""
+section7,word,perseverance,不屈の努力,[],"I admire your perseverance, courage and wisdom. ""You flatter me!"""
+section7,word,courage,勇気,[],"I admire your perseverance, courage and wisdom. ""You flatter me!"""
+section7,word,wisdom,知恵,[],"I admire your perseverance, courage and wisdom. ""You flatter me!"""
+section7,word,You flatter me.,お世辞でもうれしいよ,[],"I admire your perseverance, courage and wisdom. ""You flatter me!"""
+section7,word,in doing,～する時は,[],"I admire your perseverance, courage and wisdom. ""You flatter me!"""
+section7,word,make a decision,どうするか決める,[],"In making a decision, I rely not on logic but on instinct."
+section7,word,rely on[upon],～に頼る,[],"In making a decision, I rely not on logic but on instinct."
+section7,word,not A but B,AではなくB,[],"In making a decision, I rely not on logic but on instinct."
+section7,word,logic,論理,[],"In making a decision, I rely not on logic but on instinct."
+section7,word,instinct,本能,[],"In making a decision, I rely not on logic but on instinct."
+section7,word,come up with,～(うまい考えなど)を考えだす,[],"He came up with an ingenious, sensible solution and immediately put it into practice."
+section7,word,ingenious,(考えなどが)独創的な,[],"He came up with an ingenious, sensible solution and immediately put it into practice."
+section7,word,sensible,(人・判断などが)賢明な,[],"He came up with an ingenious, sensible solution and immediately put it into practice."
+section7,word,solution (to),(～に対する)解決策,[],"He came up with an ingenious, sensible solution and immediately put it into practice."
+section7,word,immediately,直ちに,[],"He came up with an ingenious, sensible solution and immediately put it into practice."
+section7,word,put ～ into practice,～(考え・計画など)を実行に移す,[],"He came up with an ingenious, sensible solution and immediately put it into practice."
+section7,word,objective,客観的な,[],"From an objective viewpoint, the former is inferior to the latter."
+section7,word,from ～ viewpoint,～の見地[観点]からすると,[],"From an objective viewpoint, the former is inferior to the latter."
+section7,word,former,[the-]前者,[],"From an objective viewpoint, the former is inferior to the latter."
+section7,word,be inferior to,～よりも劣る,[],"From an objective viewpoint, the former is inferior to the latter."
+section7,word,latter,[the-]後者,[],"From an objective viewpoint, the former is inferior to the latter."
+section7,word,sound,(聞いたところ)～のようだ,[],"Your idea sounds marvelous in theory, yet I don't think it will work in practice."
+section7,word,marvelous,すばらしい,[],"Your idea sounds marvelous in theory, yet I don't think it will work in practice."
+section7,word,in theory,理論的には,[],"Your idea sounds marvelous in theory, yet I don't think it will work in practice."
+section7,word,yet,しかし(それでも),[],"Your idea sounds marvelous in theory, yet I don't think it will work in practice."
+section7,word,in practice,(理論ではなく)実際には,[],"Your idea sounds marvelous in theory, yet I don't think it will work in practice."
+section7,word,expect A to do,Aが～することを期待する,[],"We expected him to defeat his opponent, but he failed to live up to our expectations."
+section7,word,defeat,～に勝つ、～を負かす,[],"We expected him to defeat his opponent, but he failed to live up to our expectations."
+section7,word,opponent,(論争・試合などの)相手、対抗者,[],"We expected him to defeat his opponent, but he failed to live up to our expectations."
+section7,word,fail to do,(そうすべきなのに)～しない、～し損なう,[],"We expected him to defeat his opponent, but he failed to live up to our expectations."
+section7,word,live up to one's expectations,～の期待に応える,[],"We expected him to defeat his opponent, but he failed to live up to our expectations."
+section7,word,ironically,皮肉にも,[],"Ironically, despite their best endeavors, their mission resulted in complete failure."
+section7,word,despite,～にもかかわらず,[],"Ironically, despite their best endeavors, their mission resulted in complete failure."
+section7,word,endeavor,(壮大な)試み、努力,[],"Ironically, despite their best endeavors, their mission resulted in complete failure."
+section7,word,mission,(政治的・軍事的な)任務、使命,[],"Ironically, despite their best endeavors, their mission resulted in complete failure."
+section7,word,result in,～(結果)に終わる,[],"Ironically, despite their best endeavors, their mission resulted in complete failure."
+section7,word,complete,全くの,[],"Ironically, despite their best endeavors, their mission resulted in complete failure."
+section7,word,failure,失敗,[],"Ironically, despite their best endeavors, their mission resulted in complete failure."
+section7,word,genius,天賦の才能,[],Her genius makes up for her lack of firsthand experience.
+section7,word,make up for,～(マイナス状態)を埋め合わせる,[],Her genius makes up for her lack of firsthand experience.
+section7,word,lack,欠乏、不足,[],Her genius makes up for her lack of firsthand experience.
+section7,word,firsthand,(情報などが)直接得た,[],Her genius makes up for her lack of firsthand experience.
+section7,word,experience,経験,[],Her genius makes up for her lack of firsthand experience.
+section7,word,possess,～を所有する,[],She possesses a great capacity for overcoming any obstacle.
+section7,word,capacity,(人の)能力,[],She possesses a great capacity for overcoming any obstacle.
+section7,word,overcome,～を克服する,[],She possesses a great capacity for overcoming any obstacle.
+section7,word,obstacle,障害,[],She possesses a great capacity for overcoming any obstacle.
+section7,word,without,(その時)～がなかったら[いなかった]なら,[],"Without your solid support, the deal would have fallen through. I'm grateful to you."
+section7,word,solid,しっかりした、団結した,[],"Without your solid support, the deal would have fallen through. I'm grateful to you."
+section7,word,support,支持,[],"Without your solid support, the deal would have fallen through. I'm grateful to you."
+section7,word,deal,取引,[],"Without your solid support, the deal would have fallen through. I'm grateful to you."
+section7,word,would have done,～していただろう,[],"Without your solid support, the deal would have fallen through. I'm grateful to you."
+section7,word,fall through,(交渉・計画などが)うまくいかない,[],"Without your solid support, the deal would have fallen through. I'm grateful to you."
+section7,word,be grateful to ～ (for A),(Aのことで)～に感謝している,[],"Without your solid support, the deal would have fallen through. I'm grateful to you."
+section8,word,flammable,可燃性の,[],Bringing flammable items into the cabin is prohibited.
+section8,word,item,品目,[],Bringing flammable items into the cabin is prohibited.
+section8,word,cabin,(飛行機・船などの)客室,[],Bringing flammable items into the cabin is prohibited.
+section8,word,prohibit,(法律・規制で)～(行為)を禁止する,[],Bringing flammable items into the cabin is prohibited.
+section8,word,flight,(飛行機の)便,[],Our flight to Vienna was delayed on account of a minor accident.
+section8,word,Vienna,ウィーン,[],Our flight to Vienna was delayed on account of a minor accident.
+section8,word,delay,～を遅らせる,[],Our flight to Vienna was delayed on account of a minor accident.
+section8,word,on account of,～(好ましくないこと)が理由で,[],Our flight to Vienna was delayed on account of a minor accident.
+section8,word,minor,(程度・重要度などが)小さな,[],Our flight to Vienna was delayed on account of a minor accident.
+section8,word,accident,事故,[],Our flight to Vienna was delayed on account of a minor accident.
+section8,word,plane,飛行機,[],"The plane blew up and plunged into the ocean, killing all the people on board."
+section8,word,blow(～)up,(建物などが)爆発する,[],"The plane blew up and plunged into the ocean, killing all the people on board."
+section8,word,plunge (～) (into A),(Aに)勢いよく[激しく]飛び込む,[],"The plane blew up and plunged into the ocean, killing all the people on board."
+section8,word,ocean,[the-]海,[],"The plane blew up and plunged into the ocean, killing all the people on board."
+section8,word,～ on board,(飛行機などに)乗っている,[],"The plane blew up and plunged into the ocean, killing all the people on board."
+section8,word,around the clock,昼夜休むことなく,[],They are working around the clock looking into the cause of the crash.
+section8,word,look into,～を調査する,[],They are working around the clock looking into the cause of the crash.
+section8,word,cause,原因,[],They are working around the clock looking into the cause of the crash.
+section8,word,crash,(飛行機の)墜落,[],They are working around the clock looking into the cause of the crash.
+section8,word,unfortunately,不幸[不運]にも,[],"Unfortunately, few passengers survived the catastrophe."
+section8,word,few,(数が)ほとんどない[いない],[],"Unfortunately, few passengers survived the catastrophe."
+section8,word,passenger,(乗り物に)乗る人、乗客,[],"Unfortunately, few passengers survived the catastrophe."
+section8,word,survive,(～(事故など)で)生き残る,[],"Unfortunately, few passengers survived the catastrophe."
+section8,word,catastrophe,大惨事,[],"Unfortunately, few passengers survived the catastrophe."
+section8,word,aviation,航空,[],The aviation expert analyzed the statistics in detail.
+section8,word,expert,専門家、評論家,[],The aviation expert analyzed the statistics in detail.
+section8,word,analyze,～を分析する,[],The aviation expert analyzed the statistics in detail.
+section8,word,statistics,統計,[],The aviation expert analyzed the statistics in detail.
+section8,word,in detail,詳細に,[],The aviation expert analyzed the statistics in detail.
+section8,word,on behalf of,～の代表[代理]として,[],"On behalf of all the staff, I'd like to express our sympathy for the victims."
+section8,word,staff,社員、職員(全体),[],"On behalf of all the staff, I'd like to express our sympathy for the victims."
+section8,word,express,～を表現する,[],"On behalf of all the staff, I'd like to express our sympathy for the victims."
+section8,word,sympathy,同情、共感,[],"On behalf of all the staff, I'd like to express our sympathy for the victims."
+section8,word,victim,犠牲者、被害者,[],"On behalf of all the staff, I'd like to express our sympathy for the victims."
+section8,word,in a sense,ある意味では,[],"In a sense, he is to blame for the disaster."
+section8,word,A is to blame (for B),(Bは)Aのせいだ,[],"In a sense, he is to blame for the disaster."
+section8,word,disaster,惨事,[],"In a sense, he is to blame for the disaster."
+section8,word,vehicle,車両、乗り物,[],The vehicles are inspected for defects every three months.
+section8,word,inspect,～を(綿密に)検査する,[],The vehicles are inspected for defects every three months.
+section8,word,defect,(機械などの)欠陥,[],The vehicles are inspected for defects every three months.
+section8,word,every,～ごとに,[],The vehicles are inspected for defects every three months.
+section9,word,"be amazed to hear[see, etc]",～を聞いて[見て](とても)驚く,[],I was amazed to see that our utility bills came to so much
+section9,word,utility,(公益サービスの)電気、ガス、水道,[],I was amazed to see that our utility bills came to so much
+section9,word,bill,請求書,[],I was amazed to see that our utility bills came to so much
+section9,word,come to (1),(合計が)～になる,[],I was amazed to see that our utility bills came to so much
+section9,word,turn ～off,～(水栓)を止める,[],Turn the faucet off! mom yelled in a rage.
+section9,word,faucet,{米}水道の栓,[],Turn the faucet off! mom yelled in a rage.
+section9,word,yell,(興奮して)(～と)叫ぶ,[],Turn the faucet off! mom yelled in a rage.
+section9,word,in a rage,激怒して,[],Turn the faucet off! mom yelled in a rage.
+section9,word,tighten,～をきつく締める,[],Tighten the lid so the food doesn't go bad.
+section9,word,lid,（箱・鍋などの)蓋,[],Tighten the lid so the food doesn't go bad.
+section9,word,so (that) A will do,Aが～するように,[],Tighten the lid so the food doesn't go bad.
+section9,word,go bad,(食べ物などが)腐る、いたむ,[],Tighten the lid so the food doesn't go bad.
+section9,word,borrow,～(もの)を(無料で)借りる,[],"Can I borrow your scissors? ""Sure, here you are."""
+section9,word,scissors,はさみ,[],"Can I borrow your scissors? ""Sure, here you are."""
+section9,word,sure,もちろん,[],"Can I borrow your scissors? ""Sure, here you are."""
+section9,word,Here you are.,(物を渡すときに)はいどうぞ,[],"Can I borrow your scissors? ""Sure, here you are."""
+section9,word,substitute ～ (for A),～を(Aの)代わりに使う,[],You can substitute some transparent glue for a needle and thread.
+section9,word,transparent,透明な,[],You can substitute some transparent glue for a needle and thread.
+section9,word,glue,接着剤,[],You can substitute some transparent glue for a needle and thread.
+section9,word,needle,縫い針,[],You can substitute some transparent glue for a needle and thread.
+section9,word,thread,(裁縫用)の糸,[],You can substitute some transparent glue for a needle and thread.
+section9,word,dye,～を染める,[],I dyed this fabric and it shrank
+section9,word,fabric,織物、生地,[],I dyed this fabric and it shrank
+section9,word,shrink-shrank-shrunk,縮む,[],I dyed this fabric and it shrank
+section9,word,get rid of,～を処分する[捨てる],[],I'm getting rid of this leather jacket because it's worn out at the elbows.
+section9,word,leather,革,[],I'm getting rid of this leather jacket because it's worn out at the elbows.
+section9,word,wear (～) out,～をすり切らす,[],I'm getting rid of this leather jacket because it's worn out at the elbows.
+section9,word,elbow,(服)肘の部分,[],I'm getting rid of this leather jacket because it's worn out at the elbows.
+section9,word,add A to B,AをBに加える,[],Add some flour to the mixture and stir it until it becomes thick.
+section9,word,flour,小麦粉,[],Add some flour to the mixture and stir it until it becomes thick.
+section9,word,mixture,混合物,[],Add some flour to the mixture and stir it until it becomes thick.
+section9,word,stir,～をかき混ぜる,[],Add some flour to the mixture and stir it until it becomes thick.
+section9,word,thick,濃い、とろみのある,[],Add some flour to the mixture and stir it until it becomes thick.
+section9,word,do with,～をどうにかする[扱う],[],"What should we do with the leftovers? ""Keep them in the fridge for now. I'll heat them in the microwave later."""
+section9,word,leftovers,(食事の)残り物,[],"What should we do with the leftovers? ""Keep them in the fridge for now. I'll heat them in the microwave later."""
+section9,word,fridge,冷蔵庫,[],"What should we do with the leftovers? ""Keep them in the fridge for now. I'll heat them in the microwave later."""
+section9,word,for now,とりあえず,[],"What should we do with the leftovers? ""Keep them in the fridge for now. I'll heat them in the microwave later."""
+section9,word,microwave,電子レンジ,[],"What should we do with the leftovers? ""Keep them in the fridge for now. I'll heat them in the microwave later."""
+section9,word,lay ～ out,～(大金)をつぎ込む,[],"I could have laid out all that money on a new PC, but on second thought I decided to put some aside for a rainy day."
+section9,word,on second thought,考え直して,[],"I could have laid out all that money on a new PC, but on second thought I decided to put some aside for a rainy day."
+section9,word,decide to do,～することに決める,[],"I could have laid out all that money on a new PC, but on second thought I decided to put some aside for a rainy day."
+section9,word,put ～ aside,～(物・お金など)を取っておく,[],"I could have laid out all that money on a new PC, but on second thought I decided to put some aside for a rainy day."
+section9,word,for a rainy day,まさかの時のために,[],"I could have laid out all that money on a new PC, but on second thought I decided to put some aside for a rainy day."
+section9,word,cell phone,携帯電話,[],"A cell phone has become something of a necessity, and I can't do without one."
+section9,word,something of a,ちょっとした,[],"A cell phone has become something of a necessity, and I can't do without one."
+section9,word,necessity,必需品,[],"A cell phone has become something of a necessity, and I can't do without one."
+section9,word,do without,～なしでやっていく,[],"A cell phone has become something of a necessity, and I can't do without one."
+section9,word,no sooner A than B,Aした途端にBが起きる,[],No sooner had I sat back and relaxed than my wife asked me to do the chores.
+section9,word,sit back,ゆったりと座る,[],No sooner had I sat back and relaxed than my wife asked me to do the chores.
+section9,word,relax,くつろぐ,[],No sooner had I sat back and relaxed than my wife asked me to do the chores.
+section9,word,chore,[-s]雑用,[],No sooner had I sat back and relaxed than my wife asked me to do the chores.
+section9,word,lay-laid-laid,～を(そっと)置く,[],She laid the baby down and lay down beside him.
+section9,word,lie down(lie-lay-lain),(体を休めるために)横になる,[],She laid the baby down and lay down beside him.
+section10,word,put ～ away,～を(収納場所に）片付ける,[],Put this stuff away! It's in the way.
+section10,word,stuff,もの、こと,[],Put this stuff away! It's in the way.
+section10,word,in one's way/in the way(of),(～の)邪魔になって,[],Put this stuff away! It's in the way.
+section10,word,make believe (that～),(～の)まねをして遊ぶ,[],"When the kids made believe they were dinosaurs, they were scolded by their mother."
+section10,word,dinosaur,恐竜,[],"When the kids made believe they were dinosaurs, they were scolded by their mother."
+section10,word,scold ～ (for A),(Aのことで)～(子供)を叱る,[],"When the kids made believe they were dinosaurs, they were scolded by their mother."
+section10,word,bump into,～に(ドンと)ぶつかる,[],"After he bumped into the shelf, the priceless china fell and shattered into fragments."
+section10,word,shelf,棚,[],"After he bumped into the shelf, the priceless china fell and shattered into fragments."
+section10,word,priceless,とても高価な,[],"After he bumped into the shelf, the priceless china fell and shattered into fragments."
+section10,word,china,陶磁器,[],"After he bumped into the shelf, the priceless china fell and shattered into fragments."
+section10,word,shatter,粉々になる,[],"After he bumped into the shelf, the priceless china fell and shattered into fragments."
+section10,word,fragment,(割れた)破片,[],"After he bumped into the shelf, the priceless china fell and shattered into fragments."
+section10,word,keep an eye on,(万が一のことが起こらないよう)～から目を離さない、～を気をつけて見る,[],"Can you keep an eye on my kids for a while? I need to pick up Ken. No problem."""
+section10,word,for a while,少しの間,[],"Can you keep an eye on my kids for a while? I need to pick up Ken. No problem."""
+section10,word,pick ～ up,(車で)～を迎えに行く,[],"Can you keep an eye on my kids for a while? I need to pick up Ken. No problem."""
+section10,word,neighbor,隣の住人,[],Our neighbor told us off for making a mess in his yard.
+section10,word,tell ～ off (for A),(Aのことで)～(人)にがみがみ説教をする,[],Our neighbor told us off for making a mess in his yard.
+section10,word,mess,散らかっていて汚い状態[もの],[],Our neighbor told us off for making a mess in his yard.
+section10,word,yard,{米}(家の周りの)庭,[],Our neighbor told us off for making a mess in his yard.
+section10,word,resemble,～に(外見などが)似ている,[],Dolly resembles her big sister in every way. You can't tell them apart.
+section10,word,big sister,姉,[],Dolly resembles her big sister in every way. You can't tell them apart.
+section10,word,in ～ way,～の点[意味]で,[],Dolly resembles her big sister in every way. You can't tell them apart.
+section10,word,tell～apart,～(複数の人[もの])を見分ける,[],Dolly resembles her big sister in every way. You can't tell them apart.
+section10,word,as a (general) rule,概して,[],"As a rule, twins have a lot in common."
+section10,word,twin,双子の一方,[],"As a rule, twins have a lot in common."
+section10,word,have a lot[nothing] in common (with～),(～と)共通点が多い[ない],[],"As a rule, twins have a lot in common."
+section10,word,be tired of,～にうんざりしている,[],"I'm tired of doing the dishes, doing the laundry, and so on!"
+section10,word,do the dishes,食器を洗う,[],"I'm tired of doing the dishes, doing the laundry, and so on!"
+section10,word,do the laundry,洗濯する,[],"I'm tired of doing the dishes, doing the laundry, and so on!"
+section10,word,and so on[forth],など,[],"I'm tired of doing the dishes, doing the laundry, and so on!"
+section10,word,favorite,(一番の)お気に入りの,[],My favorite pastime is strolling along the shore. It's pleasant.
+section10,word,pastime,余暇の楽しみ,[],My favorite pastime is strolling along the shore. It's pleasant.
+section10,word,stroll,(リラックスして)ぶらぶらと歩く、散歩する,[],My favorite pastime is strolling along the shore. It's pleasant.
+section10,word,shore,海岸、湖岸,[],My favorite pastime is strolling along the shore. It's pleasant.
+section10,word,pleasant,(性格・雰囲気などが)楽しい、心地よい,[],My favorite pastime is strolling along the shore. It's pleasant.
+section10,word,be exhausted (from[by] ～),(～で)疲れ切っている,[],"I'm exhausted! Let's take a break in the shade. ""Why not?"""
+section10,word,take a break,一休みする,[],"I'm exhausted! Let's take a break in the shade. ""Why not?"""
+section10,word,shade,日陰,[],"I'm exhausted! Let's take a break in the shade. ""Why not?"""
+section10,word,Why not?,(勧誘の問に対して)もちろん,[],"I'm exhausted! Let's take a break in the shade. ""Why not?"""
+section10,word,vending machine,自動販売機,[],"Bob, this vending machine is out of order. ""Oh no! I'm dying of thirst!"""
+section10,word,out of order,調子が悪い、故障中の,[],"Bob, this vending machine is out of order. ""Oh no! I'm dying of thirst!"""
+section10,word,be dying of,～(空腹・退屈など)で死にそうだ、たまらなく～だ,[],"Bob, this vending machine is out of order. ""Oh no! I'm dying of thirst!"""
+section10,word,thirst,喉の渇き,[],"Bob, this vending machine is out of order. ""Oh no! I'm dying of thirst!"""
+section10,word,faint,気を失う,[],"He fainted with hunger and fatigue, but came to after a while."
+section10,word,hunger,空腹,[],"He fainted with hunger and fatigue, but came to after a while."
+section10,word,fatigue,(倒れる寸前の)疲労,[],"He fainted with hunger and fatigue, but came to after a while."
+section10,word,come to (2),意識を回復する,[],"He fainted with hunger and fatigue, but came to after a while."
+section10,word,after a while,しばらくして,[],"He fainted with hunger and fatigue, but came to after a while."
