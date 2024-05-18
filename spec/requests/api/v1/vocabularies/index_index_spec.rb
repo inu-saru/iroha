@@ -249,6 +249,66 @@ RSpec.describe 'GET /api/v1/spaces/:space_id/vocabularies' do
           ]
         )
       end
+
+      it 'sort: en_ascを指定した場合、enの昇順で返されること' do
+        params['sort'] = 'en_asc'
+        sentence1.en = 'a'
+        sentence2.en = 'b'
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id),
+            hash_including(id: sentence2.id)
+          ]
+        )
+      end
+
+      it 'sort: en_descを指定した場合、enの降順で返されること' do
+        params['sort'] = 'en_desc'
+        sentence1.en = 'a'
+        sentence2.en = 'b'
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence2.id),
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
+
+      it 'sort: ja_ascを指定した場合、jaの昇順で返されること' do
+        params['sort'] = 'ja_asc'
+        sentence1.ja = 'a'
+        sentence2.ja = 'b'
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence1.id),
+            hash_including(id: sentence2.id)
+          ]
+        )
+      end
+
+      it 'sort: ja_descを指定した場合、jaの降順で返されること' do
+        params['sort'] = 'ja_desc'
+        sentence1.ja = 'a'
+        sentence2.ja = 'b'
+        subject
+
+        expect(response).to have_http_status(:ok)
+        expect(json_response).to match(
+          [
+            hash_including(id: sentence2.id),
+            hash_including(id: sentence1.id)
+          ]
+        )
+      end
     end
   end
 end
