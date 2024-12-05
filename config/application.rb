@@ -13,6 +13,7 @@ require "action_controller/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "rails/test_unit/railtie"
+require_relative '../lib/oroshi_api_client'
 require_relative '../lib/middlewares/batch_api'
 
 # Require the gems listed in Gemfile, including any gems

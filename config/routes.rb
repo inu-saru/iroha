@@ -22,6 +22,9 @@ Rails.application.routes.draw do
           member do
             get :following, :followers, controller: 'vocabularies/follow'
           end
+          collection do
+            post 'bulk', controller: 'vocabularies/bulk', action: 'create'
+          end
         end
         resources :relationships, controller: 'relationships/index'
       end
