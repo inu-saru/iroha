@@ -3,7 +3,7 @@ class Relationship < ApplicationRecord
   belongs_to :follower, class_name: 'Vocabulary'
   belongs_to :followed, class_name: 'Vocabulary'
 
-  enum :language_type, { en: 0, ja: 1 }
+  enum :language_type, Language::TYPES
 
   scope :filter_by_language_type, ->(language_type) { where language_type: }
   scope :filter_by_follower_id, ->(follower_id) { where follower_id: }
