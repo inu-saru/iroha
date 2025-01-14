@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_23_084832) do
+ActiveRecord::Schema[7.0].define(version: 2025_01_13_164743) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,7 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_23_084832) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["followed_id"], name: "index_relationships_on_followed_id"
-    t.index ["follower_id", "followed_id", "language_type"], name: "index_relationships_on_follower_id_followed_id_language_type", unique: true
+    t.index %w[follower_id followed_id language_type], name: "index_relationships_on_follower_id_followed_id_language_type", unique: true
     t.index ["follower_id"], name: "index_relationships_on_follower_id"
     t.index ["space_id"], name: "index_relationships_on_space_id"
   end
@@ -41,7 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_23_084832) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["space_id", "user_id"], name: "index_space_users_on_space_id_and_user_id", unique: true
+    t.index %w[space_id user_id], name: "index_space_users_on_space_id_and_user_id", unique: true
     t.index ["space_id"], name: "index_space_users_on_space_id"
     t.index ["user_id"], name: "index_space_users_on_user_id"
   end
@@ -50,6 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_23_084832) do
     t.string "name", limit: 255, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "language_types", default: [], array: true
   end
 
   create_table "users", force: :cascade do |t|
