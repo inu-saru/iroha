@@ -15,6 +15,7 @@ gem 'alba'
 gem 'pagy', '~> 6.0'
 gem 'faraday'
 gem 'faraday_middleware'
+gem 'array_enum'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
