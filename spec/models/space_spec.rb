@@ -25,5 +25,24 @@ RSpec.describe Space do
         expect(space.errors[:name]).to include("is too short (minimum is 1 character)")
       end
     end
+
+    describe 'language_types' do
+      it 'language_typeが２つ以上の場合は有効であること' do
+        space = build(:space, language_types: %w[en ja])
+        expect(space).to be_valid
+      end
+
+      it 'language_typeが1つの場合は無効であること' do
+        space = build(:space, language_types: ['en'])
+        expect(space).not_to be_valid
+        expect(space.errors[:language_types]).to include("language_types is needed over two")
+      end
+
+      it 'language_typeが空の場合は無効であること' do
+        space = build(:space, language_types: [])
+        expect(space).not_to be_valid
+        expect(space.errors[:language_types]).to include("language_types is needed over two")
+      end
+    end
   end
 end

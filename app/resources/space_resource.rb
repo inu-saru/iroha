@@ -1,3 +1,3 @@
 class SpaceResource < BaseResource
-  attributes :id, :name, :updated_at, :created_at
+  attributes :id, :name, :language_types, :updated_at, :created_at
 end
