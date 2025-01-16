@@ -28,7 +28,7 @@ class Api::V1::Spaces::IndexController < ApplicationController
   private
 
   def space_params
-    params.require(:space).permit(:name)
+    params.require(:space).permit(:name, language_types: [])
   end
 
   def space

@@ -17,7 +17,7 @@ RSpec.describe 'POST /api/v1/spaces' do
     end
 
     it 'ログインユーザーの所有する1件のSpaceが登録されること' do
-      params[:space] = attributes_for(:space).slice(:name)
+      params[:space] = attributes_for(:space).slice(:name, :language_types)
 
       expect do
         subject
@@ -27,8 +27,15 @@ RSpec.describe 'POST /api/v1/spaces' do
       expect(created_space.users).to include user1
     end
 
-    it '不正なparamsの場合、400エラーが返ること' do
+    it 'nameが不正なparamsの場合、400エラーが返ること' do
       params[:space] = { name: '' }
+
+      subject
+      expect(response).to have_http_status(:bad_request)
+    end
+
+    it 'language_typesが不正なparamsの場合、400エラーが返ること' do
+      params[:space] = { language_types: ['en'] }
 
       subject
       expect(response).to have_http_status(:bad_request)
